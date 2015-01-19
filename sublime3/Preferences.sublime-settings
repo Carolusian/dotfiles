@@ -1,0 +1,7 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by file type specific settings.
+{
+	"font_face": "INCONSOLATA",
+    "font_size": 11,
+	"ignored_packages": []
+}
