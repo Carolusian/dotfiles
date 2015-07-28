@@ -13,12 +13,14 @@
 		"LESS",
 		"Markdown Preview",
 		"Package Control",
+		"PHP-Twig",
 		"requirementstxt",
 		"SFTP",
 		"SideBarEnhancements",
 		"SideBarFolders",
 		"SublimeCodeIntel",
 		"SublimeLinter",
-		"TernJS"
+		"TernJS",
+		"Xdebug Client"
 	]
 }
