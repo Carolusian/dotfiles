@@ -20,6 +20,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
 * Use `:checkhealth` and `:UpdateRemotePlugins` to debug plugin installations
 * Install `fzf` and `Ag` with: `brew install fzf && brew install the_silver_searcher`
 * Install `ctags` with: `brew install ctags`
+* Install `neovim` for Node.js: `npm i -g neovim`
 * Useful shortcuts:
   * Python specific:
     * `:Isort`
