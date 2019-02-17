@@ -41,7 +41,9 @@ Plug 'mxw/vim-jsx'
 Plug 'jxnblk/vim-mdx-js'
 Plug 'prettier/vim-prettier'
 
-Plug 'dracula/vim' " theme
+" theme
+Plug 'dracula/vim' 
+Plug 'dikiaap/minimalist'
 
 Plug '/usr/local/opt/fzf' " install with brew install fzf
 Plug 'junegunn/fzf.vim'
@@ -56,9 +58,15 @@ call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " misc settings
+set t_Co=256
 set guifont=Source\ Code\ Pro:h14
 syntax on
-color dracula
+colorscheme minimalist
+
+let g:airline_theme='minimalist'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
 set number
 set nowrap " don't wrap lines
 let NERDTreeIgnore = ['\.pyc$'] " .pyc is annoying
