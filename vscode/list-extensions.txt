@@ -1,0 +1,9 @@
+dbaeumer.vscode-eslint
+eg2.tslint
+miclo.sort-typescript-imports
+mikestead.dotenv
+ms-python.python
+PeterJausovec.vscode-docker
+scala-lang.scala
+Tyriar.sort-lines
+vscodevim.vim
