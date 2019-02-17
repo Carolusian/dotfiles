@@ -39,7 +39,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
     * C-P
     * Space
   * Go to definition: `C-]`, `g]` (Need to wait for ctags generated)
-  * folding: `zf5j`, `{visual}zf`, `zfa}`, `zc`, `zo`, `zR`
+  * folding: `zf5j`, `{visual}zf`, `zfa}`, `zc`, `zo`, `zR`, `za`
   * vim splits (Control + Window): 
     * `C+ww`, `C+w{hljk}` (move)
     * `:sp` (horizontal)
