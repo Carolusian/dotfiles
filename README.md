@@ -28,7 +28,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
   * NERDTree: 
     * `go`, `s`, `i`
     * map \<C-o\> :NERDTreeFind\<cr\> (Make NERDTree return current buffer in new tabs)
-  * CtrlP: `C+t`, `C+v`, `C+h`
+  * CtrlP: `C+t`, `C+v`, `C+h`, `CtrpPTags`
   * fzf: `:FZF` and `Ag`
   * vim-surround: `cs"'`, `ds"` and `vlllllS'`
   * tagbar:
@@ -37,6 +37,8 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
     * C-N
     * C-P
     * Space
+  * Go to definition: `C-]` (Need to wait for ctags generated)
+  * folding: `zf5j`, `{visual}zf`, `zfa}`, `zc`, `zo`, `zR`
   * vim splits (Control + Window): 
     * `C+ww`, `C+w{hljk}` (move)
     * `:sp` (horizontal)

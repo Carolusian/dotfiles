@@ -26,6 +26,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
 Plug 'sbdchd/neoformat'
 Plug 'majutsushi/tagbar'
+Plug 'ludovicchabant/vim-gutentags' " Manage tag files
 Plug 'ervandew/supertab' " tab completion
 Plug 'jiangmiao/auto-pairs'
 Plug 'Lokaltog/vim-easymotion'
@@ -33,6 +34,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-sleuth' " heuristically set buffer options, like shiftwidth
+Plug 'tmhedberg/SimpylFold'
 Plug 'mattn/webapi-vim'
 
 Plug 'HerringtonDarkholme/yats.vim'
@@ -95,6 +97,15 @@ nmap <S-F> :Ag<space>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " kick start tagbar
 nnoremap <silent> <C-K><C-T> :TagbarToggle<CR>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" fold settings
+set foldmethod=syntax
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+let javaScript_fold=1
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
