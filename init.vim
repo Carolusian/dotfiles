@@ -24,11 +24,13 @@ endif
 Plug 'zchee/deoplete-jedi'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'sbdchd/neoformat'
 Plug 'majutsushi/tagbar'
 Plug 'ludovicchabant/vim-gutentags' " Manage tag files
 Plug 'ervandew/supertab' " tab completion
 Plug 'jiangmiao/auto-pairs'
+Plug 'mattn/emmet-vim' " expending html tags
 Plug 'Lokaltog/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'

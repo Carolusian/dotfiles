@@ -31,13 +31,14 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
   * CtrlP: `C+t`, `C+v`, `C+h`, `CtrpPTags`
   * fzf: `:FZF` and `Ag`
   * vim-surround: `cs"'`, `ds"` and `vlllllS'`
+  * vim-emmet: `C-y,`, `html:5`
   * tagbar:
     * <CR> (Jump to tag)
     * p, P (Jump and stay)
     * C-N
     * C-P
     * Space
-  * Go to definition: `C-]` (Need to wait for ctags generated)
+  * Go to definition: `C-]`, `g]` (Need to wait for ctags generated)
   * folding: `zf5j`, `{visual}zf`, `zfa}`, `zc`, `zo`, `zR`
   * vim splits (Control + Window): 
     * `C+ww`, `C+w{hljk}` (move)
