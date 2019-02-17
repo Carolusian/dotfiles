@@ -15,7 +15,7 @@ call plug#begin('~/.vim/plugged')
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'stsewd/isort.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'mhartington/nvim-typescript', { 'do': 'sh ./install.sh' }
+  Plug 'mhartington/nvim-typescript', {'do': ':!install.sh \| UpdateRemotePlugins'}
 else
   Plug 'Shougo/deoplete.nvim'
   Plug 'roxma/nvim-yarp'
