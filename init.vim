@@ -25,6 +25,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
 Plug 'sbdchd/neoformat'
 Plug 'majutsushi/tagbar'
+Plug 'ervandew/supertab' " tab completion
 Plug 'Lokaltog/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
