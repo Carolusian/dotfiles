@@ -26,19 +26,20 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
   * easymotion: `<LEADER><LEADER>w`, `<LEADER><LEADER>b`
   * NERDTree: 
     * `go`, `s`, `i`
-    * map <C-o> :NERDTreeFind<cr> (Make NERDTree return current buffer in new tabs)
+    * map \<C-o\> :NERDTreeFind\<cr\> (Make NERDTree return current buffer in new tabs)
   * CtrlP: `C+t`, `C+v`, `C+h`
   * fzf: `:FZF` and `Ag`
   * vim-surround: `cs"'`, `ds"` and `vlllllS'`
   * tagbar:
     * <CR> (Jump to tag)
-    * `p`, `P` (Jump and stay)
-    * <C-N>, <C-P>
-    * <Space>
+    * p, P (Jump and stay)
+    * C-N
+    * C-P
+    * Space
   * vim splits (Control + Window): 
     * `C+ww`, `C+w{hljk}` (move)
     * `:sp` (horizontal)
-    * `vsp` (vertical)
+    * `:vsp` (vertical)
     * `C+w_` (maximise) 
     * `C+w=` (Resize equally) 
     * `C+w{n}{+-}` (Resize by number of lines)
@@ -49,10 +50,10 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
   * reload .vimrc: `:so %` (**so**urce current buffer)
   * registers: `reg`, `"`
 * Key notions:
-  * <C>: Control
-  * <D>: Command
-  * <S>: Shift
-  * <Leader>: \
-  * <Plug>: Allow users to provide their own key bindings to a unique key which cannot enter from keyboard
-  * <Slient>: Silent the output
+  * C: Control
+  * D: Command
+  * S: Shift
+  * Leader
+  * Plug: Allow users to provide their own key bindings to a unique key which cannot enter from keyboard
+  * Slient: Silent the output
 
