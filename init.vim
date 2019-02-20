@@ -59,6 +59,7 @@ Plug 'vim-airline/vim-airline'
 
 Plug '/usr/local/opt/fzf' " install with brew install fzf
 Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive' " git commands
 
 " Disabled tags
 " Plug 'ludovicchabant/vim-gutentags' " Manage tag files automatically,
