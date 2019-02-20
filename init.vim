@@ -25,13 +25,16 @@ else
 endif
 Plug 'zchee/deoplete-jedi'
 Plug 'davidhalter/jedi-vim' " For python auto completion
+Plug 'ervandew/supertab' " tab completion
+
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
+
+Plug 'w0rp/ale' " linting
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sbdchd/neoformat'
+
 Plug 'majutsushi/tagbar'
-Plug 'ludovicchabant/vim-gutentags' " Manage tag files
-Plug 'ervandew/supertab' " tab completion
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim' " expending html tags
 Plug 'Lokaltog/vim-easymotion'
@@ -42,6 +45,7 @@ Plug 'tpope/vim-sleuth' " heuristically set buffer options, like shiftwidth
 Plug 'tmhedberg/SimpylFold'
 Plug 'mattn/webapi-vim'
 
+" js
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
@@ -56,6 +60,8 @@ Plug 'vim-airline/vim-airline'
 Plug '/usr/local/opt/fzf' " install with brew install fzf
 Plug 'junegunn/fzf.vim'
 
+" Disabled tags
+" Plug 'ludovicchabant/vim-gutentags' " Manage tag files automatically,
 
 let g:python_host_prog = '/Users/cs/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '/Users/cs/.pyenv/versions/neovim3/bin/python'
