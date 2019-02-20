@@ -149,7 +149,10 @@ autocmd FileType python          nnoremap <buffer> <C-]> :call jedi#goto()<CR>
 autocmd FileType typescript      nnoremap <buffer> <C-]> :TSDef<CR>
 
 " terminal
-tnoremap <Esc> <C-\><C-n>
+if has('nvim')
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <C-v><Esc> <Esc>
+endif
 autocmd TermOpen * set bufhidden=hide
 
 

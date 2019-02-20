@@ -33,7 +33,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
   * vim-surround: `cs"'`, `ds"` and `vlllllS'`
   * vim-emmet: `C-y,`, `html:5`
   * tagbar:
-    * <CR> (Jump to tag)
+    * CR (Jump to tag)
     * p, P (Jump and stay)
     * C-N
     * C-P
@@ -47,6 +47,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
     * `C+w_` (maximise) 
     * `C+w=` (Resize equally) 
     * `C+w{n}{+-}` (Resize by number of lines)
+    * `C+t` (to topleft)
     * `C+w{J|K}` (Move split arround)
   * buffers: 
     * `bn`, `bp`
