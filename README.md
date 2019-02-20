@@ -56,6 +56,8 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
   * save and quit all: `:wqa`
   * reload .vimrc: `:so %` (**so**urce current buffer)
   * registers: `reg`, `"`
+  * help: http://vim.wikia.com/wiki/Learn_to_use_help
+    * C-], C-T, C-O, C-I
 * Key notions:
   * C: Control
   * D: Command

@@ -14,10 +14,12 @@ call plug#begin('~/.vim/plugged')
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'stsewd/isort.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'mhartington/nvim-typescript', {'do': ':!install.sh \| UpdateRemotePlugins'}
 else
   Plug 'Shougo/deoplete.nvim'
+  Plug 'Shougo/denite.nvim'
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
@@ -75,30 +77,16 @@ set nowrap " don't wrap lines
 set noshowmode "don't show --INSERT--
 let NERDTreeIgnore = ['\.pyc$'] " .pyc is annoying
 
-" view the current buffer in NERDTree
-" map <C-o> :NERDTreeToggle %<CR>
-map <C-o> :NERDTreeFind<CR>
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" toggle commenting of lines with command + /
-map <C-c> :Commentary<cr>
+" Keep the error column always visible (jumpy when linter runs on input)
+set signcolumn=yes
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ctrlp use .gitignore
 " https://github.com/kien/ctrlp.vim/issues/174
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . -co --exclude-standard', 'find %s -type f']
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" map Shift + F to Ag (Ack alternative, fzf required)
-nmap <S-F> :Ag<space>
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" kick start tagbar
-nnoremap <silent> <C-K><C-T> :TagbarToggle<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -124,17 +112,23 @@ let g:airline#extensions#tabline#enabled = 1
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Key mappings
+" map <C-o> :NERDTreeToggle %<CR>
+map <C-o> :NERDTreeFind<CR>
+
+" toggle commenting of lines with command + c
+map <C-c> :Commentary<cr>
+
+" map Shift + F (Search & Find) to Ag (Ack alternative, fzf required)
+nmap <S-F> :Ag<space>
+
+" kick start tagbar
+nnoremap <silent> <C-K><C-T> :TagbarToggle<CR>
+
 " buffers
 nnoremap <S-tab> :bn<CR>
 nnoremap <Leader>cb :bp \| bd #<CR>
 
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Keep the error column always visible (jumpy when linter runs on input)
-:set signcolumn=yes
-
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings for moving lines and preserving indentation
 " http://vim.wikia.com/wiki/Moving_lines_up_or_down
 nnoremap <C-j> :m .+1<CR>==
@@ -142,9 +136,7 @@ nnoremap <C-k> :m .-2<CR>==
 vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Mapping goto definition key mappings 
+" Goto definition key mappings 
 autocmd FileType python          nnoremap <buffer> <C-]> :call jedi#goto()<CR>
 autocmd FileType typescript      nnoremap <buffer> <C-]> :TSDef<CR>
 
