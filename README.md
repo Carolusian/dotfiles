@@ -47,9 +47,11 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
     * `C+w_` (maximise) 
     * `C+w=` (Resize equally) 
     * `C+w{n}{+-}` (Resize by number of lines)
+    * `C+w{J|K}` (Move split arround)
   * buffers: 
     * `bn`, `bp`
     * `bp|bd #` (delete current buffer without closing window)
+    * `sp|b 1` (edit a buffer in split)
   * terminal model: [http://vimcasts.org/episodes/neovim-terminal/]
   * tabs: `:tabedit {file}`
   * moves:
