@@ -149,7 +149,6 @@ autocmd FileType python          nnoremap <buffer> <C-]> :call jedi#goto()<CR>
 autocmd FileType typescript      nnoremap <buffer> <C-]> :TSDef<CR>
 
 " terminal
-inoremap <Esc> <C-\><C-n>
 tnoremap <Esc> <C-\><C-n>
 autocmd TermOpen * set bufhidden=hide
 
