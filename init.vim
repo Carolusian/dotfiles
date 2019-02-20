@@ -144,6 +144,7 @@ vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
 " Goto definition key mappings 
+nnoremap <buffer> <C-]> :ALEGoToDefinition<CR>
 autocmd FileType python          nnoremap <buffer> <C-]> :call jedi#goto()<CR>
 autocmd FileType typescript      nnoremap <buffer> <C-]> :TSDef<CR>
 
