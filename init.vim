@@ -119,8 +119,8 @@ let g:airline#extensions#tabline#enabled = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Key mappings
-" map <C-o> :NERDTreeToggle %<CR>
-map <C-o> :NERDTreeFind<CR>
+" map <C-N> :NERDTreeToggle %<CR>
+map <C-N><C-F> :NERDTreeFind<CR>
 
 " toggle commenting of lines with command + c
 map <C-c> :Commentary<cr>
@@ -129,7 +129,7 @@ map <C-c> :Commentary<cr>
 nmap <S-F> :Ag<space>
 
 " kick start tagbar
-nnoremap <silent> <C-K><C-T> :TagbarToggle<CR>
+nnoremap <silent> <C-T><C-T> :TagbarToggle<CR>
 
 " buffers
 nnoremap <S-tab> :bn<CR>
