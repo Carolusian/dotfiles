@@ -22,6 +22,7 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 Plug 'zchee/deoplete-jedi'
+Plug 'davidhalter/jedi-vim' " For python auto completion
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
@@ -48,6 +49,7 @@ Plug 'prettier/vim-prettier'
 " theme
 Plug 'dracula/vim' 
 Plug 'dikiaap/minimalist'
+Plug 'vim-airline/vim-airline'
 
 Plug '/usr/local/opt/fzf' " install with brew install fzf
 Plug 'junegunn/fzf.vim'
@@ -67,12 +69,10 @@ set guifont=Source\ Code\ Pro:h14
 syntax on
 colorscheme minimalist
 
-let g:airline_theme='minimalist'
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
 
 set number
 set nowrap " don't wrap lines
+set noshowmode "don't show --INSERT--
 let NERDTreeIgnore = ['\.pyc$'] " .pyc is annoying
 
 " view the current buffer in NERDTree
@@ -108,6 +108,45 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 let javaScript_fold=1
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" disable vim-jedi auto completion, we use deoplete
+" but still use vim-jedi for goto definition
+let g:jedi#completions_enabled = 0
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" airline
+let g:airline_theme='minimalist'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" buffers
+nnoremap <S-tab> :bn<CR>
+nnoremap <Leader>cb :bp \| bd #<CR>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Keep the error column always visible (jumpy when linter runs on input)
+:set signcolumn=yes
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Mappings for moving lines and preserving indentation
+" http://vim.wikia.com/wiki/Moving_lines_up_or_down
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Mapping goto definition key mappings 
+autocmd FileType python          nnoremap <buffer> <C-]> :call jedi#goto()<CR>
+autocmd FileType typescript      nnoremap <buffer> <C-]> :TSDef<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

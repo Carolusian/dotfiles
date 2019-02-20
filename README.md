@@ -47,6 +47,9 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
     * `C+w_` (maximise) 
     * `C+w=` (Resize equally) 
     * `C+w{n}{+-}` (Resize by number of lines)
+  * buffers: 
+    * `bn`, `bp`
+    * `bp|bd #` (delete current buffer without closing window)
   * tabs: `:tabedit {file}`
   * moves:
     * `C+d` and `C+u` (Move 1/2 screen)
