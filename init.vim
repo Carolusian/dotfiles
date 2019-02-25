@@ -152,9 +152,8 @@ autocmd FileType typescript      nnoremap <buffer> <C-]> :TSDef<CR>
 if has('nvim')
   tnoremap <Esc> <C-\><C-n>
   tnoremap <C-v><Esc> <Esc>
+  autocmd TermOpen * set bufhidden=hide
 endif
-autocmd TermOpen * set bufhidden=hide
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Run Neoformat on save
