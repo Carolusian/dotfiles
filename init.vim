@@ -25,6 +25,7 @@ else
 endif
 Plug 'zchee/deoplete-jedi'
 Plug 'davidhalter/jedi-vim' " For python auto completion
+Plug 'tweekmonster/django-plus.vim' " For django
 Plug 'ervandew/supertab' " tab completion
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -51,7 +52,11 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'jxnblk/vim-mdx-js'
 Plug 'prettier/vim-prettier'
+Plug 'posva/vim-vue'
 
+" Golang
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' } 
+ 
 " theme
 Plug 'dracula/vim' 
 Plug 'dikiaap/minimalist'
@@ -147,6 +152,9 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 nnoremap <buffer> <C-]> :ALEGoToDefinition<CR>
 autocmd FileType python          nnoremap <buffer> <C-]> :call jedi#goto()<CR>
 autocmd FileType typescript      nnoremap <buffer> <C-]> :TSDef<CR>
+
+" Golang
+autocmd BufNewFile,BufRead *.go  setlocal noet ts=4 sw=4 sts=4
 
 " terminal
 if has('nvim')
