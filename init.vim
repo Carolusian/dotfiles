@@ -13,45 +13,45 @@ endif
 call plug#begin('~/.vim/plugged')
 
 if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'stsewd/isort.nvim', { 'do': ':UpdateRemotePlugins' }
-  Plug 'mhartington/nvim-typescript', {'do': ':!install.sh \| UpdateRemotePlugins'}
 else
-  Plug 'Shougo/deoplete.nvim'
   Plug 'Shougo/denite.nvim'
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
-Plug 'zchee/deoplete-jedi'
-Plug 'davidhalter/jedi-vim' " For python auto completion
-Plug 'tweekmonster/django-plus.vim' " For django
-Plug 'ervandew/supertab' " tab completion
-
+" navigation
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'kien/ctrlp.vim'
+Plug 'majutsushi/tagbar'
+Plug '/usr/local/opt/fzf' " install with brew install fzf
+Plug 'junegunn/fzf.vim'
+
+" completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " auto-completion
+Plug 'ervandew/supertab' " tab completion
+
+" python
+Plug 'tweekmonster/django-plus.vim' " For django
 
 Plug 'w0rp/ale' " linting
+Plug 'sbdchd/neoformat' " formatng code
 Plug 'editorconfig/editorconfig-vim'
-Plug 'sbdchd/neoformat'
 
-Plug 'majutsushi/tagbar'
+" editing
+Plug 'tpope/vim-sensible' " sensible default
+Plug 'tpope/vim-sleuth' " heuristically set buffer options, like shiftwidth
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim' " expending html tags
 Plug 'Lokaltog/vim-easymotion'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-sleuth' " heuristically set buffer options, like shiftwidth
-Plug 'tmhedberg/SimpylFold'
+Plug 'kalekundert/vim-coiled-snake' " fold python code
+Plug 'Konfekt/FastFold'
 Plug 'mattn/webapi-vim'
 
 " js
 Plug 'HerringtonDarkholme/yats.vim'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'jxnblk/vim-mdx-js'
-Plug 'prettier/vim-prettier'
 Plug 'posva/vim-vue'
 
 " Golang
@@ -62,8 +62,6 @@ Plug 'dracula/vim'
 Plug 'dikiaap/minimalist'
 Plug 'vim-airline/vim-airline'
 
-Plug '/usr/local/opt/fzf' " install with brew install fzf
-Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive' " git commands
 
 " Disabled tags
@@ -71,10 +69,15 @@ Plug 'tpope/vim-fugitive' " git commands
 
 let g:python_host_prog = '/Users/cs/.pyenv/versions/neovim2/bin/python'
 let g:python3_host_prog = '/Users/cs/.pyenv/versions/neovim3/bin/python'
-let g:deoplete#enable_at_startup = 1
 
 call plug#end()
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Coc settings
+" let g:coc_global_extensions = [
+
+" ]
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " misc settings

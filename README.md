@@ -1,12 +1,13 @@
 # dotfiles
+
 Just keep my dotfiles here
 
-### Installation
+## Installation
 
 You need to clone it to C:\User\<Username>\dotfiles
 
 
-#### Sublime
+## Sublime
 
 ```sh
 $ cd C:\User\<Username>\AppData\Roaming\Sublime Text 3\Packages\User
@@ -14,13 +15,16 @@ $ mklink "Package Control.sublime-settings" "C:\User\<Username>\dotfiles\sublime
 $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Preferences.sublime-settings"
 ```
 
-#### Neovim
+## Neovim
 
 * See how to setup Python for Neovim: [https://github.com/deoplete-plugins/deoplete-jedi/wiki/Setting-up-Python-for-Neovim]
 * Use `:checkhealth` and `:UpdateRemotePlugins` to debug plugin installations
 * Install `fzf` and `Ag` with: `brew install fzf && brew install the_silver_searcher`
 * Install `ctags` with: `brew install ctags`
 * Install `neovim` for Node.js: `npm i -g neovim`
+* Install with  `coc.vim` (intellisense-engine): `CocInstall coc-tsserver coc-eslint coc-json coc-prettier coc-css`
+  * `npm i eslint`
+  * `eslint --init`
 * Useful shortcuts:
   * Python specific:
     * `:Isort`
@@ -69,4 +73,8 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
   * Leader
   * Plug: Allow users to provide their own key bindings to a unique key which cannot enter from keyboard
   * Slient: Silent the output
+
+### References
+
+* [A guide to modern Web Development with (Neo)vim](https://www.freecodecamp.org/news/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2/)
 
