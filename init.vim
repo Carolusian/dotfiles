@@ -22,6 +22,7 @@ else
 endif
 " navigation
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'kien/ctrlp.vim'
 Plug 'majutsushi/tagbar'
@@ -167,7 +168,7 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
   \ 'coc-tsserver',
-  \ 'coc-eslint',
+  \ 'coc-tslint',
   \ 'coc-prettier',
   \ 'coc-json',
   \ 'coc-python',
@@ -261,6 +262,12 @@ omap af <Plug>(coc-funcobj-a)
 nmap <silent> <TAB> <Plug>(coc-range-select)
 xmap <silent> <TAB> <Plug>(coc-range-select)
 
+" prettier command for coc
+command! -nargs=0 Prettier      CocCommand prettier.formatFile
+" run prettier on save
+"let g:prettier#autoformat = 0
+"autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+"
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')
 
