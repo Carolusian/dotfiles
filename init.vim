@@ -22,6 +22,7 @@ else
 endif
 " navigation
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'ryanoasis/vim-devicons' " add file type icons
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'kien/ctrlp.vim'
@@ -65,6 +66,7 @@ Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'vim-airline/vim-airline'
 
 Plug 'tpope/vim-fugitive' " git commands
+Plug 'airblade/vim-gitgutter' " git diff in gutter
 
 " Disabled tags
 " Plug 'ludovicchabant/vim-gutentags' " Manage tag files automatically,
@@ -163,10 +165,9 @@ endif
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Coc settings
+" Coc settings, it will install the extensions automatically
 let g:coc_global_extensions = [
   \ 'coc-snippets',
-  \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-tslint',
   \ 'coc-prettier',
