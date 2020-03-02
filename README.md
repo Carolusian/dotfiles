@@ -23,6 +23,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
 * Install `ctags` with: `brew install ctags`
 * Install `neovim` for Node.js: `npm i -g neovim`
 * Install with  `coc.vim` (intellisense-engine): `CocInstall coc-tsserver coc-eslint coc-json coc-prettier coc-css`
+  * Coc requires `node` and `yarn` 
   * `npm i eslint`
   * `eslint --init`
 * Useful shortcuts:
@@ -73,8 +74,11 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
   * Leader
   * Plug: Allow users to provide their own key bindings to a unique key which cannot enter from keyboard
   * Slient: Silent the output
+* Mapping
+  * Modal Mapping: `nmap`, `vmap`, `imap` (NOTE: they are recursive)
+  * Nonrecursive Mapping: `nnoremap`
+  * <silent>: The key bindings will call the function silently
 
 ### References
 
 * [A guide to modern Web Development with (Neo)vim](https://www.freecodecamp.org/news/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2/)
-
