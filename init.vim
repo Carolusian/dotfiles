@@ -149,7 +149,6 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 " Goto definition key mappings 
 nnoremap <buffer> <C-]> :ALEGoToDefinition<CR>
 autocmd FileType python          nnoremap <buffer> <C-]> :call jedi#goto()<CR>
-autocmd FileType typescript      nnoremap <buffer> <C-]> <Plug>(coc-definition)
 
 " Golang
 autocmd BufNewFile,BufRead *.go  setlocal noet ts=4 sw=4 sts=4

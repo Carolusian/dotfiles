@@ -78,6 +78,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
   * Modal Mapping: `nmap`, `vmap`, `imap` (NOTE: they are recursive)
   * Nonrecursive Mapping: `nnoremap`
   * <silent>: The key bindings will call the function silently
+  * <Plug>: <Plug> is a magic key that is designed to be remapped
 
 ### References
 
