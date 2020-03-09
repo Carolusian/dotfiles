@@ -2,6 +2,7 @@
   /* "coc.preferences.hoverTarget": "echo", */
   /* "coc.preferences.enableFloatHighlight": false, */
   "coc.preferences.formatOnType": true,
+  "coc.preferences.noselect": false,
   "coc.preferences.formatOnSaveFiletypes": ["go", "markdown", "javascript", "typescript", "json", "jsonc"],
   "coc.source.file.ignoreHidden": false,
   "prettier.printWidth": 160,
