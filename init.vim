@@ -44,7 +44,7 @@ Plug 'editorconfig/editorconfig-vim'
 " editing
 Plug 'tpope/vim-sensible' " sensible default
 Plug 'tpope/vim-sleuth' " heuristically set buffer options, like shiftwidth
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim' " expending html tags
 Plug 'Lokaltog/vim-easymotion'
 Plug 'tpope/vim-surround'
@@ -80,7 +80,7 @@ call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " misc settings
 set t_Co=256
-set guifont=Source\ Code\ Pro:h15
+set guifont=Source\ Code\ Pro:h14
 syntax on
 colorscheme onehalfdark
 
@@ -170,6 +170,7 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-tsserver',
   \ 'coc-tslint',
+  \ 'coc-eslint',
   \ 'coc-prettier',
   \ 'coc-json',
   \ 'coc-python',
