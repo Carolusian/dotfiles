@@ -57,7 +57,7 @@ Plug 'mattn/webapi-vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'posva/vim-vue'
 
-" Golang
+" golang
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' } 
  
 " theme
@@ -153,9 +153,21 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 nnoremap <buffer> <C-]> :ALEGoToDefinition<CR>
 autocmd FileType python          nnoremap <buffer> <C-]> :call jedi#goto()<CR>
 
-" Golang
-autocmd BufNewFile,BufRead *.go  setlocal noet ts=4 sw=4 sts=4
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" golang
+autocmd BufNewFile,BufRead *.go  setlocal noet ts=4 sw=4 sts=4
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
+" disable vim-go :GoDef short cut (gd)
+" this is handled by LanguageClient [LC]
+let g:go_def_mapping_enabled = 0
+let g:ale_linters = {
+	\ 'go': ['gopls'],
+	\}
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " terminal
 if has('nvim')
   tnoremap <Esc> <C-\><C-n>
@@ -174,6 +186,7 @@ let g:coc_global_extensions = [
   \ 'coc-prettier',
   \ 'coc-json',
   \ 'coc-python',
+  \ 'coc-go'
   \ ]
 
 " Use tab for trigger completion with characters ahead and navigate.

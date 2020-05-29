@@ -1,6 +1,7 @@
 {
   /* "coc.preferences.hoverTarget": "echo", */
   /* "coc.preferences.enableFloatHighlight": false, */
+  "python.formatting.provider": "yapf",
   "coc.preferences.formatOnType": true,
   "coc.preferences.noselect": false,
   "coc.preferences.formatOnSaveFiletypes": ["go", "markdown", "javascript", "typescript", "json", "jsonc"],
