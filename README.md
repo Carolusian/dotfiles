@@ -17,6 +17,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
 ## Neovim
 
 - See how to setup Python for Neovim: [https://github.com/deoplete-plugins/deoplete-jedi/wiki/Setting-up-Python-for-Neovim]
+  - Make sure have `pynvim` and `jedi` installed
 - Use `:checkhealth` and `:UpdateRemotePlugins` to debug plugin installations
 - Install `fzf` and `Ag` with: `brew install fzf && brew install the_silver_searcher`
 - Install `ctags` with: `brew install ctags`
