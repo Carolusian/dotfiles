@@ -85,3 +85,4 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
 ### References
 
 - [A guide to modern Web Development with (Neo)vim](https://www.freecodecamp.org/news/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2/)
+- [Vim for Python in 2020](https://www.vimfromscratch.com/articles/vim-for-python/)
