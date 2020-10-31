@@ -86,3 +86,18 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
 
 - [A guide to modern Web Development with (Neo)vim](https://www.freecodecamp.org/news/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2/)
 - [Vim for Python in 2020](https://www.vimfromscratch.com/articles/vim-for-python/)
+
+## Doom Emacs
+
+Mainly to use it for the purpose to use Org Mode
+
+TODO
+
+### References
+
+- Org-mode tutorial: https://www.youtube.com/watch?v=PVsSOmUB7ic
+- Doom Emacs for Noobs: https://www.youtube.com/watch?v=iab2z21cRqA&t=820s
+
+### Tips
+
+When using org-mode, can borrow the templates or structure from how others organization there Notion.so workspace
