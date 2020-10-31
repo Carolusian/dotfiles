@@ -95,7 +95,9 @@ TODO
 
 ### References
 
-- Org-mode tutorial: https://www.youtube.com/watch?v=PVsSOmUB7ic
+- Org-mode tutorial:
+  - https://www.youtube.com/watch?v=PVsSOmUB7ic
+  - https://www.youtube.com/watch?v=34zODp_lhqg
 - Doom Emacs for Noobs: https://www.youtube.com/watch?v=iab2z21cRqA&t=820s
 
 ### Tips
