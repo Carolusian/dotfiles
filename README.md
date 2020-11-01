@@ -94,15 +94,15 @@ Mainly to use it for the purpose to use Org Mode
 ### Key binding notion
 
 - `SPC` = `Space`, similar to the function of leader key in Vim
-- `RET` = `Return` the Enter 
-- `C-` = `Ctrl` to invoke commands 
+- `RET` = `Return` the Enter
+- `C-` = `Ctrl` to invoke commands
 - `M-` = `Option/Alt` the meta key, another key to invoke commends. `Meta` is a real physical key on old keyboards
-- `S-` = `Shift` 
+- `S-` = `Shift`
 
 ### Layers
 
 | Shortcut | Description |
-|----------|-------------|
+| -------- | ----------- |
 | SPC f    | File        |
 | SPC t    | Toggle      |
 | SPC w    | Window      |
@@ -112,11 +112,11 @@ Mainly to use it for the purpose to use Org Mode
 ### Org mode
 
 TODO
-         
+
 ### Other userful shortcuts
 
 | Shortcut       | Description              |
-|----------------|--------------------------|
+| -------------- | ------------------------ |
 | S'             | Qutote in visual mode    |
 | M x eval-tutor | Start evil mode tutorial |
 
@@ -128,7 +128,8 @@ TODO
 
 - Org-mode tutorial:
   - https://www.youtube.com/watch?v=PVsSOmUB7ic
-  - https://www.youtube.com/watch?v=34zODp_lhqg
+  - Org Mode Basics in Doom Emacs: https://www.youtube.com/watch?v=34zODp_lhqg
+  - Boost Productivity With Emacs, Org Mode and Org Agenda: https://www.youtube.com/watch?v=Ea_-TaEGa7Y
 - Doom Emacs for Noobs: https://www.youtube.com/watch?v=iab2z21cRqA&t=820s
 - Why Emacs uses Meta key: https://catonmat.net/why-emacs-uses-meta-key
 - Spacemacs cheatsheet: https://devhints.io/spacemacs
