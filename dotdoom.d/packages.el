@@ -51,3 +51,7 @@
 
 (package! evil-tutor)
 (package! evil-surround)
+(package! doom-themes)
+
+;; better cursor support for evil-mode
+(package! evil-terminal-cursor-changer)

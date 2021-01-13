@@ -111,14 +111,19 @@ Mainly to use it for the purpose to use Org Mode
 
 ### Org mode
 
-TODO
+| Shortcut     | Description    |
+| --------     | -----------    |
+| M-x org-info | The Org manual |
+| SPC m h      | Toggle heading |
+
 
 ### Other userful shortcuts
 
 | Shortcut       | Description              |
 | -------------- | ------------------------ |
 | S'             | Qutote in visual mode    |
-| M x eval-tutor | Start evil mode tutorial |
+| M-x eval-tutor | Start evil mode tutorial |
+| SPC h r r      | Doom Emacs reload        |
 
 ### Caveats
 
@@ -133,6 +138,10 @@ TODO
 - Doom Emacs for Noobs: https://www.youtube.com/watch?v=iab2z21cRqA&t=820s
 - Why Emacs uses Meta key: https://catonmat.net/why-emacs-uses-meta-key
 - Spacemacs cheatsheet: https://devhints.io/spacemacs
+- Pasting images in Org Mode: http://www.enist.org/blog/post/pasting-images-into-org-mode-on-mac/
+- Teaches Emacs configuration: 
+  - https://tecosaur.github.io/emacs-config/config.html
+  - https://terrymunro.keybase.pub/
 
 ### Tips
 
