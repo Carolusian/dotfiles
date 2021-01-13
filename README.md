@@ -87,7 +87,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
 - [A guide to modern Web Development with (Neo)vim](https://www.freecodecamp.org/news/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2/)
 - [Vim for Python in 2020](https://www.vimfromscratch.com/articles/vim-for-python/)
 
-## Doom Emacs
+## Doom Emacs (for GNU emacs, use spacemacs if using Mac)
 
 Mainly to use it for the purpose to use Org Mode
 
@@ -112,10 +112,9 @@ Mainly to use it for the purpose to use Org Mode
 ### Org mode
 
 | Shortcut     | Description    |
-| --------     | -----------    |
+| ------------ | -------------- |
 | M-x org-info | The Org manual |
 | SPC m h      | Toggle heading |
-
 
 ### Other userful shortcuts
 
@@ -139,10 +138,20 @@ Mainly to use it for the purpose to use Org Mode
 - Why Emacs uses Meta key: https://catonmat.net/why-emacs-uses-meta-key
 - Spacemacs cheatsheet: https://devhints.io/spacemacs
 - Pasting images in Org Mode: http://www.enist.org/blog/post/pasting-images-into-org-mode-on-mac/
-- Teaches Emacs configuration: 
+- Teaches Emacs configuration:
   - https://tecosaur.github.io/emacs-config/config.html
   - https://terrymunro.keybase.pub/
 
 ### Tips
 
 When using org-mode, can borrow the templates or structure from how others organization there Notion.so workspace
+
+## spacemacs
+
+### References
+
+- Org-mode tutorial:
+  - spacemacs org-mode tutorial: https://www.youtube.com/watch?v=PVsSOmUB7ic
+- OSX Layers: https://www.spacemacs.org/layers/+os/osx/README.html
+- Emacs Lisp quick guide: https://github.com/chrisdone/elisp-guide
+- Org layer: https://www.spacemacs.org/layers/+emacs/org/README.html
