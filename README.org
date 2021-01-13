@@ -70,3 +70,5 @@ SCHEDULED: <2021-01-13 Wed 16:00-18:00>
 *** Insert colum left: M-S-l
 *** Delete colum right: M-S-h
 *** Delete current row: dd
+* Image: `C-c C-x C-v`
+[[file:website.jpg]]
