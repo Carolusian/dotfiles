@@ -9,18 +9,20 @@
 * Type `O` start a new Level 1 headline
 Read org-mode manual with `M-x org-info`, use `SPC w c` to close the split window.
 Use `TAB` to fold a single headline, or `zc` and `zo`
-Use `S-TAB` to fold entire document, or `zM` and `zR`
-** Toggle this heading with `SPC m h` or `org-toggle-heading`
+Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
 - Toggle this as a list item `SPC m i` or `M-x org-toggle-item`
 - Unordered list item
   1. Ordered list item
   2. Ordered list item
   3. Ordered list item
   4. Ordered list item
+     - Unordered list item
 * Motion
 ** next/prev heading: `gj/gk`
 ** move parent/child element: `gh/gl`
 * Structure editing
+** insert sibling: `M-RET`
+** insert subheading: `, i s`
 ** promote / demote heading: `M-h/l`
 ** promote / demote subtree: `M-S-h/l`
 ** move subtree / list items: `M-j/k`
@@ -30,25 +32,76 @@ Use `S-TAB` to fold entire document, or `zM` and `zR`
 ** delete an element: dae
 ** select an element: vaR
 ** delete an element: daR
+** indent a subtree: `=aR`
 ** yank subtree: yiR
+** Format: `, x`
+** evil mode formating:
+   `v i` for evil mode inner selection mode, most common is `v i w`
+   `y s` yank surround, `i w` inner word, `~` to format code
+   this is some ~code~ which I want to *formating*   
+   use dot to repeat the ~command~ to another code
 * Insert snippets
-** `SPC-i-s`
+** `SPC i s` or `M-m-i-s`
 ** bang: #!/usr/bin/env bash
 ** license: `SPC-i-s license`
 ** time: Wed Jan 13 23:49:36 2021
+
+  #+BEGIN_SRC python 
+  import py
+  print "Hello World"
+  #+END_SRC
+   
 * TODO items
-** TODO example one
+** DONE example one
+   CLOSED: [2021-01-14 Thu 20:24]
+   :LOGBOOK:
+   CLOCK: [2021-01-14 Thu 20:07]--[2021-01-14 Thu 20:07] =>  0:00
+   :END:
 ** TODO example one
 ** toggle TODO item: S-LEFT/RIGHT
 ** TODO toggle TODO state: `SPC-m-t`
-** schedule: `SPC-m-d-s`
-SCHEDULED: <2021-01-13 Wed 16:00-18:00>
+** schedule: `, d s` or `SPC-m-d-s` (d stands for dates)
+   SCHEDULED: <2021-01-13 Wed 16:00-18:00>
+** deadline: `, d d`
+   DEADLINE: <2021-01-15 Fri 20:00>
+** update existing: `S-UP/DOWN` and `S-LEFT/RIGHT` to change dates
+** [#A] priority: `S-UP/DOWN`
+** sort: `vaR ,sS`
+** search: `, s s`
+* TODO table
+  Quit by `q`, editing cells by `e`
+  Columns is customisable with `#+COLUMNS` feature
+** DONE example one
+   CLOSED: [2021-01-14 Thu 20:24]
+   :LOGBOOK:
+   CLOCK: [2021-01-14 Thu 20:07]--[2021-01-14 Thu 20:07] =>  0:00
+   :END:
+** TODO example one
+** TODO toggle TODO state: `SPC-m-t`
+** schedule: `, d s` or `SPC-m-d-s` (d stands for dates)
+   SCHEDULED: <2021-01-13 Wed 16:00-18:00>
+** deadline: `, d d`
+   DEADLINE: <2021-01-15 Fri 20:00>
+** update existing: `S-UP/DOWN` and `S-LEFT/RIGHT` to change dates
+** [#A] priority: `S-UP/DOWN`
+** sort: `vaR ,sS`
+** search: `, s s`
+* Tags
+** `, i t` or `C-c C-c`                                               
 * Checkbox: - [ ][2/3][66%] `/` and `%`
 - [ ] running
 - [X] swimming
 - [X] toggle: `C-c C-c`
-** move this to front of agend: `C-c-[`
-** org-agenda: `SPC-o-a`
+* org-agenda:
+** move this to front of agend: `C-c-[` or `M-x org-agenda-file-front`
+** open agenda: `, a`
+*** list of all todos: `t`, then `RET` to just to the item
+**** Use `{N} r` to search a particular type of todo items
+*** day/week or week view agenda: `, a a` and `d` or `w` to switch in between 
+**** You can use `, d d` or `, d s` to reschedule
+** Clock mode:
+*** `, C i` clock in
+*** `, C o` clock out
 * Tables
   See: https://orgmode.org/worg/org-tutorials/tables.html
 ** Creating a table

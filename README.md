@@ -63,11 +63,15 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
   - tabs: `:tabedit {file}`
   - moves:
     - `C+d` and `C+u` (Move 1/2 screen)
+  - selection
+    - `va)` select to closing )
   - save and quit all: `:wqa`
   - reload .vimrc: `:so %` (**so**urce current buffer)
   - registers: `reg`, `"`
   - help: http://vim.wikia.com/wiki/Learn_to_use_help
     - C-], C-T, C-O, C-I
+  - normal mode: 
+    - :norm
 - Key notions:
   - C: Control
   - D: Command
@@ -86,6 +90,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
 
 - [A guide to modern Web Development with (Neo)vim](https://www.freecodecamp.org/news/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2/)
 - [Vim for Python in 2020](https://www.vimfromscratch.com/articles/vim-for-python/)
+- [At least one vim trick you might not know](https://www.hillelwayne.com/post/intermediate-vim/)
 
 ## Doom Emacs (for GNU emacs, use spacemacs if using Mac)
 
@@ -152,6 +157,13 @@ When using org-mode, can borrow the templates or structure from how others organ
 
 - `SPC SPC` = meta key
 - `,` = major mode leader key, e.g. org-mode, markdown-mode
+- `SPC f e d` = update .spacemacs configuration
+- `SPC f e R` = to reload the configuration
+- `C-h i` = to get help, in the help can use `m` to access menu items
+
+### Customization
+
+- user configuration is set in .spacemacs `defun dotspacemacs/user-config` part
 
 ### References
 
