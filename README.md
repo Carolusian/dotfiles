@@ -148,6 +148,11 @@ When using org-mode, can borrow the templates or structure from how others organ
 
 ## spacemacs
 
+### Key binding notion
+
+- `SPC SPC` = meta key
+- `,` = major mode leader key, e.g. org-mode, markdown-mode
+
 ### References
 
 - Org-mode tutorial:

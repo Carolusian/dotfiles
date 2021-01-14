@@ -50,8 +50,10 @@ SCHEDULED: <2021-01-13 Wed 16:00-18:00>
 ** move this to front of agend: `C-c-[`
 ** org-agenda: `SPC-o-a`
 * Tables
+  See: https://orgmode.org/worg/org-tutorials/tables.html
 ** Creating a table
 *** Just start typing: | Name | Phone | Age |
+*** Define table size: `C-c |`
 *** move between cell: `TAB/S-TAB`
 *** Make org-table headline: `SPC m b -`
 *** Duplicate a field, copy down: `S-<RET>`
