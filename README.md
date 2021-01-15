@@ -165,6 +165,14 @@ When using org-mode, can borrow the templates or structure from how others organ
 
 - user configuration is set in .spacemacs `defun dotspacemacs/user-config` part
 
+- customise TODO keywords
+  ```
+  (with-eval-after-load 'org
+  (setq org-todo-keywords
+        '((sequence "TODO" "DOING" "BLOCKED" "REVIEW" "|" "DONE" "ARCHIVED"))))
+  ```
+  need `M-x org-mode-restart`
+
 ### References
 
 - Org-mode tutorial:
@@ -172,3 +180,6 @@ When using org-mode, can borrow the templates or structure from how others organ
 - OSX Layers: https://www.spacemacs.org/layers/+os/osx/README.html
 - Emacs Lisp quick guide: https://github.com/chrisdone/elisp-guide
 - Org layer: https://www.spacemacs.org/layers/+emacs/org/README.html
+- Implementing A Second Brain in Emacs and Org-Mode: https://tasshin.com/blog/implementing-a-second-brain-in-emacs-and-org-mode/
+- How to config spacemacs: https://www.youtube.com/watch?v=2P-hEtTlJIA&amp%3Bfeature=share
+- A practical guide to spacemacs: https://practicalli.github.io/spacemacs/org-mode/todo-states.html

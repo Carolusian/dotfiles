@@ -25,8 +25,10 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
 ** insert subheading: `, i s`
 ** promote / demote heading: `M-h/l`
 ** promote / demote subtree: `M-S-h/l`
+** toggle heading: `C-c *`
 ** move subtree / list items: `M-j/k`
 ** move list item up, but not sub-items: `M-S-j/k`
+** narrow(forcus) / widen / center: `SPC n f` / `SPC n w` / `SPC w c C`
 * Advanced editing in evil mode
 ** select an element: vae
 ** delete an element: dae
@@ -59,7 +61,8 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
    :END:
 ** TODO example one
 ** toggle TODO item: S-LEFT/RIGHT
-** TODO toggle TODO state: `SPC-m-t`
+** DONE toggle TODO state: `SPC-m-t`
+   CLOSED: [2021-01-15 Fri 16:36]
 ** schedule: `, d s` or `SPC-m-d-s` (d stands for dates)
    SCHEDULED: <2021-01-13 Wed 16:00-18:00>
 ** deadline: `, d d`
@@ -88,6 +91,7 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
 ** search: `, s s`
 * Tags
 ** `, i t` or `C-c C-c`                                               
+** `SPC u C-c C-c`: align the tags
 * Checkbox: - [ ][2/3][66%] `/` and `%`
 - [ ] running
 - [X] swimming
