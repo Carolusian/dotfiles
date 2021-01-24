@@ -70,7 +70,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
   - registers: `reg`, `"`
   - help: http://vim.wikia.com/wiki/Learn_to_use_help
     - C-], C-T, C-O, C-I
-  - normal mode: 
+  - normal mode:
     - :norm
 - Key notions:
   - C: Control
@@ -153,6 +153,7 @@ When using org-mode, can borrow the templates or structure from how others organ
 
 ## spacemacs
 
+
 ### Key binding notion
 
 - `SPC SPC` = meta key
@@ -160,23 +161,42 @@ When using org-mode, can borrow the templates or structure from how others organ
 - `SPC f e d` = update .spacemacs configuration
 - `SPC f e R` = to reload the configuration
 - `C-h i` = to get help, in the help can use `m` to access menu items
+- `M-m` = equal to `SPC` in insert mode
 
 ### Customization
 
 - user configuration is set in .spacemacs `defun dotspacemacs/user-config` part
 
 - customise TODO keywords
+
   ```
   (with-eval-after-load 'org
   (setq org-todo-keywords
         '((sequence "TODO" "DOING" "BLOCKED" "REVIEW" "|" "DONE" "ARCHIVED"))))
   ```
+
   need `M-x org-mode-restart`
+
+- enable `visual-line-mode` by default
+  ```
+  (with-eval-after-load 'org
+    (add-hook 'org-mode-hook #'visual-line-mode))
+  ```
+  'symbol represents (quote symbol) and #'symbol represents (function symbol) syntactically
+
+### Useful packages 
+
+- `org-journal`
+- `org-capture`
 
 ### References
 
 - Org-mode tutorial:
   - spacemacs org-mode tutorial: https://www.youtube.com/watch?v=PVsSOmUB7ic
+  - Major Mode commands: https://www.youtube.com/watch?v=Z8h2nxLnq70
+- Templates: give you a standarded structure for particular things or tasks
+  - ideas from: https://www.youtube.com/watch?v=uJgv0XQOehs
+  - `org-capture`: http://www.howardism.org/Technical/Emacs/capturing-intro.html
 - OSX Layers: https://www.spacemacs.org/layers/+os/osx/README.html
 - Emacs Lisp quick guide: https://github.com/chrisdone/elisp-guide
 - Org layer: https://www.spacemacs.org/layers/+emacs/org/README.html

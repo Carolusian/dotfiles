@@ -10,7 +10,7 @@
 Read org-mode manual with `M-x org-info`, use `SPC w c` to close the split window.
 Use `TAB` to fold a single headline, or `zc` and `zo`
 Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
-- Toggle this as a list item `SPC m i` or `M-x org-toggle-item`
+- Toggle this as a list item `C-c -` or `M-x org-toggle-item`
 - Unordered list item
   1. Ordered list item
   2. Ordered list item
@@ -20,15 +20,16 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
 * Motion
 ** next/prev heading: `gj/gk`
 ** move parent/child element: `gh/gl`
-* Structure editing
+** easymotion: `g s f {chr}`
+* Structure editing: `, s`
 ** insert sibling: `M-RET`
 ** insert subheading: `, i s`
 ** promote / demote heading: `M-h/l`
-** promote / demote subtree: `M-S-h/l`
-** toggle heading: `C-c *`
-** move subtree / list items: `M-j/k`
-** move list item up, but not sub-items: `M-S-j/k`
-** narrow(forcus) / widen / center: `SPC n f` / `SPC n w` / `SPC w c C`
+** promote / demote subtree: `, s h/l`
+*** toggle heading: `C-c *`
+*** move subtree / list items: `M-j/k`
+*** move list item up, but not sub-items: `M-S-j/k`
+*** narrow(forcus) / widen / center: `SPC n f` / `SPC n w` / `SPC w c C`
 * Advanced editing in evil mode
 ** select an element: vae
 ** delete an element: dae
@@ -42,6 +43,8 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
    `y s` yank surround, `i w` inner word, `~` to format code
    this is some ~code~ which I want to *formating*   
    use dot to repeat the ~command~ to another code
+** fill-paragraph: `M-q`
+** visual-line-mode: `M-x visual-line-mode`
 * Insert snippets
 ** `SPC i s` or `M-m-i-s`
 ** bang: #!/usr/bin/env bash
@@ -71,9 +74,11 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
 ** [#A] priority: `S-UP/DOWN`
 ** sort: `vaR ,sS`
 ** search: `, s s`
+** subtree archive: `, s A`
 * TODO table
-  Quit by `q`, editing cells by `e`
-  Columns is customisable with `#+COLUMNS` feature
+  - `C-c C-x C-c`
+  - Quit by `q`, editing cells by `e`
+  - Columns is customisable with `#+COLUMNS` feature
 ** DONE example one
    CLOSED: [2021-01-14 Thu 20:24]
    :LOGBOOK:
@@ -97,7 +102,8 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
 - [X] swimming
 - [X] toggle: `C-c C-c`
 * org-agenda:
-** move this to front of agend: `C-c-[` or `M-x org-agenda-file-front`
+** add this to front of agend: `C-c-[` or `M-x org-agenda-file-front`
+** remove this from agend `C-c-]` or `M-x org-remove-file`
 ** open agenda: `, a`
 *** list of all todos: `t`, then `RET` to just to the item
 **** Use `{N} r` to search a particular type of todo items
@@ -129,5 +135,7 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
 *** Insert colum left: M-S-l
 *** Delete colum right: M-S-h
 *** Delete current row: dd
-* Image: `C-c C-x C-v`
+    
+* Image: toggle with `C-c C-x C-v`
+  See org-download: https://emacs-china.org/t/org-download/1672/9
 [[file:website.jpg]]
