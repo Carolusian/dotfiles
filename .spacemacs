@@ -526,7 +526,16 @@ configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
   ;; set default directory
-  (setq default-directory "~/Dropbox/secondbrain/org")
+  (setq ROOTDIR "~/Dropbox/secondbrain/org")
+  (setq default-directory ROOTDIR)
+  ;; setup search directory
+  (setq org-agenda-custom-commands
+        '(("n" . "Search in notes")
+          ("nt" "Note tags search" tags ""
+           ((org-agenda-files (file-expand-wildcards ROOTDIR))))
+          ("ns" "Note full text search" search ""
+           ((org-agenda-files (file-expand-wildcards ROOTDIR))))))
+
   (with-eval-after-load 'org
     (setq org-todo-keywords
           '((sequence "TODO" "DOING" "BLOCKED" "REVIEW" "|" "DONE" "ARCHIVED")))
@@ -546,6 +555,7 @@ before packages are loaded."
   ;; customize key bindings
   (spacemacs/declare-prefix "o" "own-menu")
   (spacemacs/set-leader-keys "oi" 'toggle-input-method)
+
  ) 
 
 ;; Do not write anything past this comment. This is where Emacs will

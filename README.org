@@ -17,6 +17,13 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
   3. Ordered list item
   4. Ordered list item
      - Unordered list item
+* Search
+** can config org-agend to search tags or notes in .spacemacs
+   see: https://emacs.stackexchange.com/questions/10012/a-search-interface-for-org-mode-files
+** search syntax:
+   see: https://orgmode.org/worg/org-tutorials/advanced-searching.html
+   - computer|work+email: computer or work and email
+   - computer|email/!NOW: combine a tag search and TODO search
 * Motion
 ** next/prev heading: `gj/gk`
 ** move parent/child element: `gh/gl`
@@ -135,7 +142,8 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
 *** Insert colum left: M-S-l
 *** Delete colum right: M-S-h
 *** Delete current row: dd
-    
+* misc
+** `M-x cd`: change directory
 * Image: toggle with `C-c C-x C-v`
   See org-download: https://emacs-china.org/t/org-download/1672/9
 [[file:website.jpg]]
