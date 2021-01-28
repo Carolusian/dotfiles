@@ -183,11 +183,31 @@ When using org-mode, can borrow the templates or structure from how others organ
     (add-hook 'org-mode-hook #'visual-line-mode))
   ```
   'symbol represents (quote symbol) and #'symbol represents (function symbol) syntactically
+  
+- enable `org-babel` languages
+  ```
+  (org-babel-do-load-languages
+    'org-babel-load-languages
+    '((emacs-lisp . t)
+      (python . t)
+      (ledger . t)))
+  ```
+  `C-c C-c`: execute code block
+  `, b`: to trigger babel related commands
+  
+- toggle input methods
+  `M-x toggle-input-method` or set the following key bindings
+  ```
+  (spacemacs/declare-prefix "o" "own-menu")
+  (spacemacs/set-leader-keys "oi" 'toggle-input-method)
+  ```
 
 ### Useful packages 
 
 - `org-journal`
 - `org-capture`
+- `org-babel`
+- `chinese`: https://develop.spacemacs.org/layers/+intl/chinese/README.html#description
 
 ### References
 

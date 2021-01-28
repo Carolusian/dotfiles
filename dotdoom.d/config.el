@@ -26,9 +26,10 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 ;; (setq doom-theme 'doom-one)
-(setq doom-font (font-spec :family "Mononoki Nerd Font" :size 15)
-      doom-variable-pitch-font (font-spec :family "Mononoki Nerd Font" :size 15))
 (setq doom-theme 'doom-one)
+
+;; set default startup directory
+(setq default-directory "~/Dropbox/secondbrain/org")
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -61,5 +62,5 @@
 ;; they are implemented.
 
 ;; allow you to distinguish between normal and insert mode
-(use-package! evil-terminal-cursor-changer
-  :hook (tty-setup . evil-terminal-cursor-changer-activate))
+;; (use-package! evil-terminal-cursor-changer
+;;   :hook (tty-setup . evil-terminal-cursor-changer-activate))
