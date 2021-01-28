@@ -49,13 +49,14 @@ This function should only modify configuration layer settings."
           osx-right-control-as 'left
           osx-swap-option-and-command nil)
 
+     (chinese :variables chinese-default-input-method 'wubi)
+
      emacs-lisp
      ;; git
      helm
      ;; lsp
      multiple-cursors
      org
-     chinese
      auto-completion
      ;; (shell :variables
      ;;        shell-default-height 30
@@ -527,14 +528,8 @@ Put your configuration code here, except for variables that should be set
 before packages are loaded."
   ;; set default directory
   (setq ROOTDIR "~/Dropbox/secondbrain/org")
-  (setq default-directory ROOTDIR)
-  ;; setup search directory
-  (setq org-agenda-custom-commands
-        '(("n" . "Search in notes")
-          ("nt" "Note tags search" tags ""
-           ((org-agenda-files (file-expand-wildcards ROOTDIR))))
-          ("ns" "Note full text search" search ""
-           ((org-agenda-files (file-expand-wildcards ROOTDIR))))))
+  (with-eval-after-load 'org
+    (setq default-directory ROOTDIR))
 
   (with-eval-after-load 'org
     (setq org-todo-keywords
@@ -549,12 +544,19 @@ before packages are loaded."
       (ledger . t)))
 
   ;; set default input method to wubi
-  (setq pyim-default-scheme 'wubi)
-  (setq pyim-page-tooltip 'popup)
+  ;; (setq pyim-default-scheme 'wubi)
 
   ;; customize key bindings
   (spacemacs/declare-prefix "o" "own-menu")
   (spacemacs/set-leader-keys "oi" 'toggle-input-method)
+
+  ;; setup search directory
+  (setq org-agenda-custom-commands
+        '(("n" . "Search in notes")
+          ("nt" "Note tags search" tags ""
+           ((org-agenda-files (file-expand-wildcards ROOTDIR))))
+          ("ns" "Note full text search" search ""
+           ((org-agenda-files (file-expand-wildcards ROOTDIR))))))
 
  ) 
 
@@ -574,7 +576,7 @@ This function is called at the very end of Spacemacs initialization."
  '(org-agenda-files
    '("~/Dropbox/secondbrain/org/1.todos.org_archive" "~/Dropbox/secondbrain/org/1.todos.org"))
  '(package-selected-packages
-   '(fcitx pyim pyim-basedict xr pangu-spacing find-by-pinyin-dired chinese-conv ace-pinyin pinyinlib yasnippet-snippets helm-company helm-c-yasnippet fuzzy company auto-yasnippet yasnippet ac-ispell auto-complete ws-butler writeroom-mode winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package undo-tree treemacs-projectile treemacs-persp treemacs-icons-dired treemacs-evil toc-org symon symbol-overlay string-inflection spaceline-all-the-icons reveal-in-osx-finder restart-emacs request rainbow-delimiters popwin pcre2el password-generator paradox overseer osx-trash osx-dictionary osx-clipboard org-superstar org-rich-yank org-projectile org-present org-pomodoro org-mime org-download org-cliplink org-brain open-junk-file nameless move-text mmm-mode markdown-toc macrostep lorem-ipsum link-hint launchctl indent-guide hybrid-mode hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-xref helm-themes helm-swoop helm-purpose helm-projectile helm-org-rifle helm-org helm-mode-manager helm-make helm-ls-git helm-flx helm-descbinds helm-ag google-translate golden-ratio gnuplot gh-md font-lock+ flycheck-package flycheck-elsa flx-ido fancy-battery eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-textobj-line evil-surround evil-org evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-escape evil-ediff evil-easymotion evil-cleverparens evil-args evil-anzu eval-sexp-fu emr elisp-slime-nav editorconfig dumb-jump dotenv-mode dired-quick-sort diminish devdocs column-enforce-mode clean-aindent-mode centered-cursor-mode auto-highlight-symbol auto-compile aggressive-indent ace-link ace-jump-helm-line)))
+   '(chinese-wbim fcitx pyim pyim-basedict xr pangu-spacing find-by-pinyin-dired chinese-conv ace-pinyin pinyinlib yasnippet-snippets helm-company helm-c-yasnippet fuzzy company auto-yasnippet yasnippet ac-ispell auto-complete ws-butler writeroom-mode winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package undo-tree treemacs-projectile treemacs-persp treemacs-icons-dired treemacs-evil toc-org symon symbol-overlay string-inflection spaceline-all-the-icons reveal-in-osx-finder restart-emacs request rainbow-delimiters popwin pcre2el password-generator paradox overseer osx-trash osx-dictionary osx-clipboard org-superstar org-rich-yank org-projectile org-present org-pomodoro org-mime org-download org-cliplink org-brain open-junk-file nameless move-text mmm-mode markdown-toc macrostep lorem-ipsum link-hint launchctl indent-guide hybrid-mode hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-xref helm-themes helm-swoop helm-purpose helm-projectile helm-org-rifle helm-org helm-mode-manager helm-make helm-ls-git helm-flx helm-descbinds helm-ag google-translate golden-ratio gnuplot gh-md font-lock+ flycheck-package flycheck-elsa flx-ido fancy-battery eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-textobj-line evil-surround evil-org evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-escape evil-ediff evil-easymotion evil-cleverparens evil-args evil-anzu eval-sexp-fu emr elisp-slime-nav editorconfig dumb-jump dotenv-mode dired-quick-sort diminish devdocs column-enforce-mode clean-aindent-mode centered-cursor-mode auto-highlight-symbol auto-compile aggressive-indent ace-link ace-jump-helm-line)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
