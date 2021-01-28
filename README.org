@@ -18,6 +18,7 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
   4. Ordered list item
      - Unordered list item
 * Search
+** generic search within directory: `SPC /` or `SPC s p`: https://practicalli.github.io/spacemacs/spacemacs-basics/working-with-projects/searching-projects.html
 ** can config org-agend to search tags or notes in .spacemacs
    see: https://emacs.stackexchange.com/questions/10012/a-search-interface-for-org-mode-files
 ** search syntax:
