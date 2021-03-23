@@ -558,6 +558,11 @@ before packages are loaded."
           ("ns" "Note full text search" search ""
            ((org-agenda-files (file-expand-wildcards ROOTDIR))))))
 
+  ;; set image with to a third of screen
+  ;; (setq org-image-actual-width (/ (display-pixel-width) 3))
+  (with-eval-after-load 'org
+    (setq org-image-actual-width nil)
+    (setq org-download-image-dir "~/Dropbox/secondbrain/org/images"))
  ) 
 
 ;; Do not write anything past this comment. This is where Emacs will

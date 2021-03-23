@@ -37,7 +37,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} " auto-completion
 " python
 Plug 'tweekmonster/django-plus.vim' " For django
 
-Plug 'w0rp/ale' " linting
+" Plug 'w0rp/ale' " linting
 Plug 'sbdchd/neoformat' " formatng code
 Plug 'editorconfig/editorconfig-vim'
 
@@ -150,7 +150,7 @@ vnoremap <C-j> :m '>+1<CR>gv=gv
 vnoremap <C-k> :m '<-2<CR>gv=gv
 
 " Goto definition key mappings 
-nnoremap <buffer> <C-]> :ALEGoToDefinition<CR>
+" nnoremap <buffer> <C-]> :ALEGoToDefinition<CR>
 autocmd FileType python          nnoremap <buffer> <C-]> :call jedi#goto()<CR>
 
 
@@ -162,9 +162,9 @@ let g:go_info_mode='gopls'
 " disable vim-go :GoDef short cut (gd)
 " this is handled by LanguageClient [LC]
 let g:go_def_mapping_enabled = 0
-let g:ale_linters = {
-	\ 'go': ['gopls'],
-	\}
+" let g:ale_linters = {
+" 	\ 'go': ['gopls'],
+" 	\}
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

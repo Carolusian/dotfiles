@@ -117,6 +117,8 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
 **** Use `{N} r` to search a particular type of todo items
 *** day/week or week view agenda: `, a a` and `d` or `w` to switch in between 
 **** You can use `, d d` or `, d s` to reschedule
+*** move between views
+**** `M-jkhl`
 ** Clock mode:
 *** `, C i` clock in
 *** `, C o` clock out
@@ -146,5 +148,11 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
 * misc
 ** `M-x cd`: change directory
 * Image: toggle with `C-c C-x C-v`
-  See org-download: https://emacs-china.org/t/org-download/1672/9
+  - See org-download: https://emacs-china.org/t/org-download/1672/9
+  - `M-x org-download-clipboard` to download from clipboard
+  - `pngpaste` is a dependency
+  - need to toggle the inline image again to resize
+  
+#+ATTR_ORG: :width 400
 [[file:website.jpg]]
+
