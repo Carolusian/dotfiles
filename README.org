@@ -9,7 +9,6 @@
 * Type `O` start a new Level 1 headline
 Read org-mode manual with `M-x org-info`, use `SPC w c` to close the split window.
 Use `TAB` to fold a single headline, or `zc` and `zo`
-Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
 - Toggle this as a list item `C-c -` or `M-x org-toggle-item`
 - Unordered list item
   1. Ordered list item
@@ -28,13 +27,13 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
 * Motion
 ** next/prev heading: `gj/gk`
 ** move parent/child element: `gh/gl`
-** easymotion: `g s f {chr}`
+** easymotion: `g s f {chr}`: `g` for evil mode commands 
 * Structure editing: `, s`
-** insert sibling: `M-RET`
+** insert sibling: `C-RET`
 ** insert subheading: `, i s`
 ** promote / demote heading: `M-h/l`
 ** promote / demote subtree: `, s h/l`
-*** toggle heading: `C-c *`
+*** toggle heading: `C-c *`: `org-toggle-heading`
 *** move subtree / list items: `M-j/k`
 *** move list item up, but not sub-items: `M-S-j/k`
 *** narrow(forcus) / widen / center: `SPC n f` / `SPC n w` / `SPC w c C`
@@ -145,6 +144,7 @@ Use `S-TABToggle this heading with `SPC m h` or `org-toggle-heading`
 *** Insert colum left: M-S-l
 *** Delete colum right: M-S-h
 *** Delete current row: dd
+
 * misc
 ** `M-x cd`: change directory
 * Image: toggle with `C-c C-x C-v`

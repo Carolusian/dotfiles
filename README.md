@@ -223,3 +223,20 @@ When using org-mode, can borrow the templates or structure from how others organ
 - Implementing A Second Brain in Emacs and Org-Mode: https://tasshin.com/blog/implementing-a-second-brain-in-emacs-and-org-mode/
 - How to config spacemacs: https://www.youtube.com/watch?v=2P-hEtTlJIA&amp%3Bfeature=share
 - A practical guide to spacemacs: https://practicalli.github.io/spacemacs/org-mode/todo-states.html
+
+## vscode
+
+- `cmd + shift + p`: command palette
+- `cmd+p`: like ctrl-p plugin in vim
+- `cmd + shift + e`: move between explorer and file editor tab 
+- `cmd + shift + o`: navigate outline
+- `cmd + ` tab number: to switch between tabs
+
+### Tips
+
+- you can sync with vscode settings using its built sync feature using github login
+
+### References
+
+- [15 Visual Studio Code Shortcuts You Should Know](https://medium.com/swlh/15-visual-studio-code-shortcuts-you-should-know-ea1b4166f69f)
+- [Useful VS Code keyboard shortcuts](https://zellwk.com/blog/useful-vscode-keyboard-shortcuts/)
