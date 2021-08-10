@@ -240,3 +240,10 @@ When using org-mode, can borrow the templates or structure from how others organ
 
 - [15 Visual Studio Code Shortcuts You Should Know](https://medium.com/swlh/15-visual-studio-code-shortcuts-you-should-know-ea1b4166f69f)
 - [Useful VS Code keyboard shortcuts](https://zellwk.com/blog/useful-vscode-keyboard-shortcuts/)
+
+## cli tools
+
+### References
+
+- [iterms2 Solarized Dark theme](https://gist.github.com/leymannx/598e0e92722f47cfb31daa7cf9f9a817): I personally prefer boxfish theme
+- [My Favorite CLI Tools](https://switowski.com/blog/favorite-cli-tools)
