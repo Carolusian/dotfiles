@@ -22,7 +22,10 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
 - Install `fzf` and `Ag` with: `brew install fzf && brew install the_silver_searcher`
 - Install `ctags` with: `brew install ctags`
 - Install `neovim` for Node.js: `npm i -g neovim`
-- Install with `coc.vim` (intellisense-engine): `CocInstall coc-tsserver coc-eslint coc-json coc-prettier coc-css`
+- Install with `coc.vim` (intellisense-engine): `:CocInstall coc-jedi coc-tsserver coc-eslint coc-json coc-prettier coc-css`
+  - `h coc-status`: check statusline integration with coc.nvim
+  - `:CocConfig`, `:CocUpdate`, `:CocList extensions`
+  - `g:coc_global_extensions` in `vimrc` to auto install those extensions
   - Coc requires `node` and `yarn`
   - `ln -s ~/dotfiles/coc-settings.json ~/.config/nvim/`
   - `npm i eslint`
@@ -153,7 +156,6 @@ When using org-mode, can borrow the templates or structure from how others organ
 
 ## spacemacs
 
-
 ### Key binding notion
 
 - `SPC SPC` = meta key
@@ -183,7 +185,6 @@ When using org-mode, can borrow the templates or structure from how others organ
     (add-hook 'org-mode-hook #'visual-line-mode))
   ```
   'symbol represents (quote symbol) and #'symbol represents (function symbol) syntactically
-  
 - enable `org-babel` languages
   ```
   (org-babel-do-load-languages
@@ -194,7 +195,6 @@ When using org-mode, can borrow the templates or structure from how others organ
   ```
   `C-c C-c`: execute code block
   `, b`: to trigger babel related commands
-  
 - toggle input methods
   `M-x toggle-input-method` or set the following key bindings
   ```
@@ -202,7 +202,7 @@ When using org-mode, can borrow the templates or structure from how others organ
   (spacemacs/set-leader-keys "oi" 'toggle-input-method)
   ```
 
-### Useful packages 
+### Useful packages
 
 - `org-journal`
 - `org-capture`
@@ -228,7 +228,7 @@ When using org-mode, can borrow the templates or structure from how others organ
 
 - `cmd + shift + p`: command palette
 - `cmd+p`: like ctrl-p plugin in vim
-- `cmd + shift + e`: move between explorer and file editor tab 
+- `cmd + shift + e`: move between explorer and file editor tab
 - `cmd + shift + o`: navigate outline
 - `cmd + ` tab number: to switch between tabs
 
