@@ -94,6 +94,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
 - [A guide to modern Web Development with (Neo)vim](https://www.freecodecamp.org/news/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2/)
 - [Vim for Python in 2020](https://www.vimfromscratch.com/articles/vim-for-python/)
 - [At least one vim trick you might not know](https://www.hillelwayne.com/post/intermediate-vim/)
+- [Use Rust with Neovim](https://oren.github.io/articles/rust/neovim/)
 
 ## Doom Emacs (for GNU emacs, use spacemacs if using Mac)
 
