@@ -31,5 +31,6 @@
         "**/.project": true,
         "**/.settings": true,
         "**/.factorypath": true
-    }
+    },
+    "files.eol": "\n"
 }

@@ -51,10 +51,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'kalekundert/vim-coiled-snake' " fold python code
 Plug 'Konfekt/FastFold'
-Plug 'mattn/webapi-vim'
 
 " js
-Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'HerringtonDarkholme/yats.vim'
 Plug 'posva/vim-vue'
 
 " golang
@@ -71,8 +70,8 @@ Plug 'airblade/vim-gitgutter' " git diff in gutter
 " Disabled tags
 " Plug 'ludovicchabant/vim-gutentags' " Manage tag files automatically,
 
-let g:python_host_prog = '/Users/cs/.pyenv/versions/neovim2/bin/python'
-let g:python3_host_prog = '/Users/cs/.pyenv/versions/neovim3/bin/python'
+let g:python_host_prog = '~/.pyenv/versions/neovim2/bin/python'
+let g:python3_host_prog = '~/.pyenv/versions/neovim3/bin/python'
 
 call plug#end()
 
@@ -151,7 +150,7 @@ vnoremap <C-k> :m '<-2<CR>gv=gv
 
 " Goto definition key mappings 
 " nnoremap <buffer> <C-]> :ALEGoToDefinition<CR>
-autocmd FileType python          nnoremap <buffer> <C-]> :call jedi#goto()<CR>
+" autocmd FileType python          nnoremap <buffer> <C-]> :call jedi#goto()<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
