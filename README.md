@@ -22,7 +22,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
 - Install `fzf` and `Ag` with: `brew install fzf && brew install the_silver_searcher`
 - Install `ctags` with: `brew install ctags`
 - Install `neovim` for Node.js: `npm i -g neovim`
-- Install with `coc.vim` (intellisense-engine): `:CocInstall coc-jedi coc-tsserver coc-eslint coc-json coc-prettier coc-css`
+- Install with `coc.vim` (intellisense-engine): `:CocInstall coc-pyright coc-tsserver coc-eslint coc-json coc-prettier coc-css`
   - `h coc-status`: check statusline integration with coc.nvim
   - `:CocConfig`, `:CocUpdate`, `:CocList extensions`
   - `g:coc_global_extensions` in `vimrc` to auto install those extensions
@@ -95,6 +95,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
 - [Vim for Python in 2020](https://www.vimfromscratch.com/articles/vim-for-python/)
 - [At least one vim trick you might not know](https://www.hillelwayne.com/post/intermediate-vim/)
 - [Use Rust with Neovim](https://oren.github.io/articles/rust/neovim/)
+- [Pyright Configuration](https://github.com/microsoft/pyright/blob/main/docs/configuration.md): pyrightconfig.json
 
 ## Doom Emacs (for GNU emacs, use spacemacs if using Mac)
 
