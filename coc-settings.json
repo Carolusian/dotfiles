@@ -5,6 +5,7 @@
   "python.linting.mypyEnabled": false,
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": ["max-line-length = 88"],
   "coc.preferences.formatOnType": true,
   "coc.preferences.noselect": false,
   "coc.preferences.formatOnSaveFiletypes": ["python", "go", "markdown", "javascript", "typescript", "json", "jsonc"],
