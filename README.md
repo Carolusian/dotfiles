@@ -75,6 +75,8 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
     - C-], C-T, C-O, C-I
   - normal mode:
     - :norm
+  - macro: `q<letter><command>q`, then `@<letter>` to apply, `@@` to apply again
+  - multiple line editing: `:norm I"<C+v><esc>$a"`
 - Key notions:
   - C: Control
   - D: Command
@@ -96,6 +98,8 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
 - [At least one vim trick you might not know](https://www.hillelwayne.com/post/intermediate-vim/)
 - [Use Rust with Neovim](https://oren.github.io/articles/rust/neovim/)
 - [Pyright Configuration](https://github.com/microsoft/pyright/blob/main/docs/configuration.md): pyrightconfig.json
+- [Recording a macro](https://vim.fandom.com/wiki/Macros)
+- [Multiple line editing](https://hassek.github.io/exit-insert-mode-on-a-norm-command-in-vim/)
 
 ## Doom Emacs (for GNU emacs, use spacemacs if using Mac)
 
