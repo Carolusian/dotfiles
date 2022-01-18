@@ -82,7 +82,7 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 ** sort: `vaR ,sS`
 ** search: `, s s`
 ** subtree archive: `, s A`
-* TODO table
+* TODO column view
   - `C-c C-x C-c`
   - Quit by `q`, editing cells by `e`
   - Columns is customisable with `#+COLUMNS` feature
