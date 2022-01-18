@@ -70,7 +70,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
     - `va)` select to closing )
   - save and quit all: `:wqa`
   - reload .vimrc: `:so %` (**so**urce current buffer)
-  - registers: `reg`, `"`
+  - registers: `reg`, `"{n}[yp]`
   - help: http://vim.wikia.com/wiki/Learn_to_use_help
     - C-], C-T, C-O, C-I
   - normal mode:
@@ -90,6 +90,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
   - <silent>: The key bindings will call the function silently
   - <Plug>: <Plug> is a magic key that is designed to be remapped
 - Command: define a command to do sth
+- Recording a macro: `q<letter><commands>q`, `<number>@<letter>`
 
 ### References
 
