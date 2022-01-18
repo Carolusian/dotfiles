@@ -1,45 +1,45 @@
 {
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "editor.suggestSelection": "first",
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--line-length=99"
-    ],
-    "python.sortImports.args": [
-        "--profile", "black"
-    ],
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "mssql.connections": [
-        {
-            "server": "{{put-server-name-here}}",
-            "database": "{{put-database-name-here}}",
-            "user": "{{put-username-here}}",
-            "password": "{{put-password-here}}"
-        }
-    ],
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter-notebook"
-    },
-    "workbench.colorTheme": "Solarized Dark",
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontLigatures": true,
-    "editor.cursorStyle": "line",
-    "editor.lineNumbers": "on",
-    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "editor.wordWrap": "off",
-    "security.workspace.trust.untrustedFiles": "open",
-    "notebook.cellToolbarLocation": {
-        "default": "right",
-        "jupyter-notebook": "left"
-    },
-    "workbench.tree.indent": 4,
-    "files.exclude": {
-        "**/.classpath": true,
-        "**/.project": true,
-        "**/.settings": true,
-        "**/.factorypath": true
-    },
-    "files.eol": "\n",
-    "tailwindCSS.emmetCompletions": true,
-    "editor.formatOnSave": true
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.suggestSelection": "first",
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length=99"],
+  "python.sortImports.args": ["--profile", "black"],
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "mssql.connections": [
+    {
+      "server": "{{put-server-name-here}}",
+      "database": "{{put-database-name-here}}",
+      "user": "{{put-username-here}}",
+      "password": "{{put-password-here}}"
+    }
+  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.colorTheme": "Solarized Dark",
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.cursorStyle": "line",
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "workbench.tree.indent": 4,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "files.eol": "\n",
+  "tailwindCSS.emmetCompletions": true,
+  "editor.formatOnSave": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
+
