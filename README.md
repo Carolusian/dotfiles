@@ -30,6 +30,8 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
   - `ln -s ~/dotfiles/coc-settings.json ~/.config/nvim/`
   - `npm i eslint`
   - `eslint --init`
+  - `:CocLocalConfig` to set project level settings
+  - `python.venvPath`: set project virtualenv path
 - Useful shortcuts:
   - Python specific:
     - `:Isort`
