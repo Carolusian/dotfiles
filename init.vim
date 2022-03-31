@@ -178,6 +178,7 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Coc settings, it will install the extensions automatically
 let g:coc_global_extensions = [
+  \ 'coc-html',
   \ 'coc-snippets',
   \ 'coc-tsserver',
   \ 'coc-tslint',
