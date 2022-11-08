@@ -37,9 +37,20 @@
   },
   "files.eol": "\n",
   "tailwindCSS.emmetCompletions": true,
-  "editor.formatOnSave": false,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "[php]": {
+    "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+  },
+  "debug.onTaskErrors": "debugAnyway",
+  "cmake.configureSettings": {
+    "CMAKE_TOOLCHAIN_FILE": "/Users/cs/Dropbox/code/vcpkg/scripts/buildsystems/vcpkg.cmake"
+  },
+  "cmake.configureOnOpen": true,
+  "editor.formatOnSave": true
 }
-
