@@ -46,6 +46,15 @@
     ;; org-superstar-prettify-item-bullets t
     )
 
+(with-eval-after-load 'org
+(setq org-todo-keywords
+      '((sequence "TODO" "DOING" "BLOCKED" "REVIEW" "|" "DONE" "ARCHIVED"))))
+
+(after! org
+  (setq org-tags-column -80)
+   ;; ... other org configuration here
+)
+
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.

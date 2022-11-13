@@ -125,6 +125,7 @@ Mainly to use it for the purpose to use Org Mode
 | SPC w    | Window      |
 | SPC b    | Buffer      |
 | SPC h    | Help        |
+| SPC m    | Mode        |
 
 ### Org mode
 
@@ -145,12 +146,38 @@ Mainly to use it for the purpose to use Org Mode
 
 - For `Option` key to work as `Meta`, need to update iTerm2 profile to set `Option` to `ESC+`
 
+### Customizaton
+
+- customise tags column alignment
+
+```
+(after! org
+  (setq org-tags-column -80)
+   ;; ... other org configuration here
+)
+
+```
+
+- use pretty headline bullet list icons
+
+```
+;; .doom.d/init.el
+(org +pretty)
+```
+
+```
+(setq
+    org-superstar-headline-bullets-list '("⁖" "◉" "○" "✸" "✿")
+)
+```
+
 ### References
 
 - Org-mode tutorial:
   - https://www.youtube.com/watch?v=PVsSOmUB7ic
   - Org Mode Basics in Doom Emacs: https://www.youtube.com/watch?v=34zODp_lhqg
   - Boost Productivity With Emacs, Org Mode and Org Agenda: https://www.youtube.com/watch?v=Ea_-TaEGa7Y
+- [Emacs for writing prose](https://discourse.doomemacs.org/t/emacs-for-writing-prose/515)
 - Doom Emacs for Noobs: https://www.youtube.com/watch?v=iab2z21cRqA&t=820s
 - Why Emacs uses Meta key: https://catonmat.net/why-emacs-uses-meta-key
 - Spacemacs cheatsheet: https://devhints.io/spacemacs
