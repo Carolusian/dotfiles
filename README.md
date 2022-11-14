@@ -126,21 +126,23 @@ Mainly to use it for the purpose to use Org Mode
 | SPC b    | Buffer      |
 | SPC h    | Help        |
 | SPC m    | Mode        |
+| g        | Evil mode   |
 
 ### Org mode
 
-| Shortcut     | Description    |
-| ------------ | -------------- |
-| M-x org-info | The Org manual |
-| SPC m h      | Toggle heading |
+| Shortcut        | Description      |
+| --------------- | ---------------- |
+| M-x org-info    | The Org manual   |
+| M-x doom/reload | Reload doomemacs |
 
 ### Other userful shortcuts
 
-| Shortcut       | Description              |
-| -------------- | ------------------------ |
-| S'             | Qutote in visual mode    |
-| M-x eval-tutor | Start evil mode tutorial |
-| SPC h r r      | Doom Emacs reload        |
+| Shortcut        | Description              |
+| --------------- | ------------------------ |
+| S'              | Qutote in visual mode    |
+| M-x eval-tutor  | Start evil mode tutorial |
+| M-x doom/reload | Doom Emacs reload        |
+| SPC h r r       | Doom Emacs reload        |
 
 ### Caveats
 
@@ -185,6 +187,8 @@ Mainly to use it for the purpose to use Org Mode
 - Teaches Emacs configuration:
   - https://tecosaur.github.io/emacs-config/config.html
   - https://terrymunro.keybase.pub/
+- [Org as a spreadsheet system: a short introduction](https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html)
+- [The Spreadsheet](https://orgmode.org/manual/The-Spreadsheet.html)
 
 ### Tips
 

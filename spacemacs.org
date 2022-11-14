@@ -1,5 +1,5 @@
 #+TITLE: Learn Org Mode & Tricks
-#+DESCRIPTION: My note to learn Org Mode
+#+DESCRIPTION: My note to learn Org Mode, doomemacs and spacemacs are very similar with minor difference
 #+Author: Carolusian
 
 * Learn how to use headline
@@ -9,7 +9,7 @@
 * Type `O` start a new Level 1 headline
 Read org-mode manual with `M-x org-info`, use `SPC w c` to close the split window.
 Use `TAB` to fold a single headline, or `zc` and `zo`
-- Toggle this as a list item `C-c -` or `M-x org-toggle-item`
+- Toggle this as a list item `C-c -` or `M-x org-toggle-item` or `SPC m i` (doom)
 - Unordered list item
   1. Ordered list item
   2. Ordered list item
@@ -28,7 +28,7 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 ** next/prev heading: `gj/gk`
 ** move parent/child element: `gh/gl`
 ** easymotion: `g s f {chr}`: `g` for evil mode commands 
-* Structure editing: `, s`
+* Structure editing: `, s` (, only applies to spacemacs)
 ** insert sibling: `C-RET`
 ** insert subheading: `, i s`
 ** promote / demote heading: `M-h/l`
@@ -80,8 +80,8 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 ** update existing: `S-UP/DOWN` and `S-LEFT/RIGHT` to change dates
 ** [#A] priority: `S-UP/DOWN`
 ** sort: `vaR ,sS`
-** search: `, s s`
-** subtree archive: `, s A`
+** search: `SPC m s s` or `, s s`
+** subtree archive: `SPC m s A` or `, s A`
 * TODO column view
   - `C-c C-x C-c`
   - Quit by `q`, editing cells by `e`
@@ -92,17 +92,15 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
    CLOCK: [2021-01-14 Thu 20:07]--[2021-01-14 Thu 20:07] =>  0:00
    :END:
 ** TODO example one
-** TODO toggle TODO state: `SPC-m-t`
-** schedule: `, d s` or `SPC-m-d-s` (d stands for dates)
+** TODO toggle TODO state: `SPC-m-t`, `S-</>`
+** schedule: `SPC-m-d-s` (d stands for dates) or `, d s`
    SCHEDULED: <2021-01-13 Wed 16:00-18:00>
-** deadline: `, d d`
+** deadline: `SPC m d d` or `, d d`
    DEADLINE: <2021-01-15 Fri 20:00>
 ** update existing: `S-UP/DOWN` and `S-LEFT/RIGHT` to change dates
 ** [#A] priority: `S-UP/DOWN`
-** sort: `vaR ,sS`
-** search: `, s s`
 * Tags
-** `, i t` or `C-c C-c`                                               
+** `C-c C-c`: insert tags
 ** `SPC u C-c C-c`: align the tags
 * Checkbox: - [ ][2/3][66%] `/` and `%`
 - [ ] running
@@ -111,7 +109,7 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 * org-agenda:
 ** add this to front of agend: `C-c-[` or `M-x org-agenda-file-front`
 ** remove this from agend `C-c-]` or `M-x org-remove-file`
-** open agenda: `, a`
+** open agenda: `SPC o A` (open Agenda) or `, a` (spacemacs)
 *** list of all todos: `t`, then `RET` to just to the item
 **** Use `{N} r` to search a particular type of todo items
 *** day/week or week view agenda: `, a a` and `d` or `w` to switch in between 
@@ -119,6 +117,7 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 *** move between views
 **** `M-jkhl`
 ** Clock mode:
+*** `SPC m c`
 *** `, C i` clock in
 *** `, C o` clock out
 * Tables
@@ -126,7 +125,7 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 ** Creating a table
 *** Just start typing: | Name | Phone | Age |
 *** Define table size: `C-c |`
-*** move between cell: `TAB/S-TAB`
+*** move between cell: `TAB/S-TAB` (forward/backward)
 *** Make org-table headline: `SPC m b -`
 *** Duplicate a field, copy down: `S-<RET>`
 | One          | Two | Three | Four |
@@ -145,8 +144,39 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 *** Delete colum right: M-S-h
 *** Delete current row: dd
 
+** Spreadsheet
+    | Student | Maths | Physics | Mean |
+    |---------+-------+---------+------|
+    | Charlie |    13 |      09 |   11 |
+    | UU      |    15 |      10 | 12.5 |
+    |---------+-------+---------+------|
+    | Mean    |       |         |      |
+    #+TBLFM: $4=vmean($2..$3)
+
+*** `C-c ?`: learn about references
+*** `C-c }`: turn on reference grid
+*** `C-c C-c`: use on #+TBLFM to eval
+*** col: $ (same as R dataframe)
+*** line (row): @
+*** `=`: column formula (on all lines)
+*** `:=`: field formula (on single line)
+*** `C-c =`: editor column formulas in minibuffer
+*** `C-c '`: list all formulas in a new buffer
+*** field reference examples
+**** ‘@-1$-3’	field one row up, three columns to the left
+**** ‘@-I$2’	field just under hline above current row, column 2
+**** ‘@>$5’	    field in the last row, in column 5
+*** range reference examples
+**** ‘$1..$3’	first three fields in the current row
+**** ‘$P..$Q’	range, using column names (see Advanced features)
+**** ‘$<<<..$>>’	start in third column, continue to the last but one
+**** ‘@2$1..@4$3’	nine fields between these two fields (same as ‘A2..C4’)
+**** ‘@-1$-2..@-1’	3 fields in the row above, starting from 2 columns on the left
+**** ‘@I..II’	between first and second hline, short for ‘@I..@II’
+
 * misc
 ** `M-x cd`: change directory
+
 * Image: toggle with `C-c C-x C-v`
   - See org-download: https://emacs-china.org/t/org-download/1672/9
   - `M-x org-download-clipboard` to download from clipboard
