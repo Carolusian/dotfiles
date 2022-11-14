@@ -53,6 +53,16 @@
 
 (after! org
   (setq org-tags-column -80)
+  (setq org-roam-directory "~/Dropbox/secondbrain/org")
+  (setq org-roam-index-file "~/Dropbox/secondbrain/index.org")
+  ;; For Logseq journals
+  (setq org-roam-dailies-directory "journals/")
+  ;; For Logseq pages
+  (setq org-roam-capture-templates
+   '(("d" "default" plain
+      "%?" :target
+      (file+head "pages/${slug}.org" "#+title: ${title}\n")
+      :unnarrowed t)))
    ;; ... other org configuration here
 )
 

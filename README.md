@@ -126,6 +126,7 @@ Mainly to use it for the purpose to use Org Mode
 | SPC b    | Buffer      |
 | SPC h    | Help        |
 | SPC m    | Mode        |
+| SPC X    | Capture     |
 | g        | Evil mode   |
 
 ### Org mode
@@ -135,6 +136,13 @@ Mainly to use it for the purpose to use Org Mode
 | M-x org-info    | The Org manual   |
 | M-x doom/reload | Reload doomemacs |
 
+### Org roam
+
+| Shortcut              | Description                   |
+| --------------------- | ----------------------------- |
+| M-x org-id-get-create | Insert orgid properties       |
+| M-x org-roam-db-sync  | Sync org-roam if file renamed |
+
 ### Other userful shortcuts
 
 | Shortcut        | Description              |
@@ -143,6 +151,7 @@ Mainly to use it for the purpose to use Org Mode
 | M-x eval-tutor  | Start evil mode tutorial |
 | M-x doom/reload | Doom Emacs reload        |
 | SPC h r r       | Doom Emacs reload        |
+| C-x d           | Dired                    |
 
 ### Caveats
 
@@ -185,6 +194,14 @@ Mainly to use it for the purpose to use Org Mode
 (org +dragndrop)
 ```
 
+- Set org-roam directory
+
+```
+(after! org
+        (setq org-roam-directory "~/secondbrain/org/")
+        (setq org-roam-index-file "~/secondbrain/org/index.org"))
+```
+
 ### Useful packages
 
 - `org-journal`
@@ -199,6 +216,7 @@ Mainly to use it for the purpose to use Org Mode
   - https://www.youtube.com/watch?v=PVsSOmUB7ic
   - Org Mode Basics in Doom Emacs: https://www.youtube.com/watch?v=34zODp_lhqg
   - Boost Productivity With Emacs, Org Mode and Org Agenda: https://www.youtube.com/watch?v=Ea_-TaEGa7Y
+- [The Ultimate Doom Emacs Cheatsheet](https://naghdbishi.ir/Doom-Emacs-Cheat-Sheet/README.html)
 - [Emacs for writing prose](https://discourse.doomemacs.org/t/emacs-for-writing-prose/515)
 - Doom Emacs for Noobs: https://www.youtube.com/watch?v=iab2z21cRqA&t=820s
 - Why Emacs uses Meta key: https://catonmat.net/why-emacs-uses-meta-key
@@ -209,8 +227,12 @@ Mainly to use it for the purpose to use Org Mode
   - https://terrymunro.keybase.pub/
 - [Org as a spreadsheet system: a short introduction](https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html)
 - [The Spreadsheet](https://orgmode.org/manual/The-Spreadsheet.html)
-- [](https://zzamboni.org/post/my-doom-emacs-configuration-with-commentary/)
+- [My Doom Emacs configuration, with commentary](https://zzamboni.org/post/my-doom-emacs-configuration-with-commentary/)
 - [Sample doomemacs config](https://github.com/tefkah/doom-emacs-config)
+- [DoomEmacs Installing Org-Roam](https://www.reddit.com/r/DoomEmacs/comments/sh7m64/installing_orgroam/)
+- [https://www.orgroam.com/manual.html](https://www.orgroam.com/manual.html)
+- [Configuring org-roam](https://coredumped.dev/2021/05/26/taking-org-roam-everywhere-with-logseq/)
+- [How to rename a note with everything updated at the same time?](https://org-roam.discourse.group/t/how-to-rename-a-note-with-everything-updated-at-the-same-time/300)
 
 ### Tips
 
