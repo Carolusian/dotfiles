@@ -179,6 +179,11 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 - add top level headline tagged with :TOC:
 - `M-x toc-org-insert-toc` to generate the TOC for this file
 
+* Journal
+- enable `+roam2` flag for org-mode
+- setup `org-roam-dailies-directory` to `journels` as of loqseq
+- `M-x org-roam-dailies-goto-today` to create an journel entry in `journels` folder
+
 * misc
 ** `M-x cd`: change directory
 ** `C-c C-e`: export file

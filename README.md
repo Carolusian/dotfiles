@@ -324,3 +324,10 @@ When using org-mode, can borrow the templates or structure from how others organ
 
 - [iterms2 Solarized Dark theme](https://gist.github.com/leymannx/598e0e92722f47cfb31daa7cf9f9a817): I personally prefer boxfish theme
 - [My Favorite CLI Tools](https://switowski.com/blog/favorite-cli-tools)
+
+## Logseq
+
+### Tips
+
+- org-mode file links can be enabled
+- can select org as default file format
