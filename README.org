@@ -174,16 +174,21 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 **** ‘@-1$-2..@-1’	3 fields in the row above, starting from 2 columns on the left
 **** ‘@I..II’	between first and second hline, short for ‘@I..@II’
 
+* Table of Content
+- add `#+options: toc:2` to org file
+- add top level headline tagged with :TOC:
+- `M-x toc-org-insert-toc` to generate the TOC for this file
+
 * misc
 ** `M-x cd`: change directory
 ** `C-c C-e`: export file
 
 * Image: toggle with `C-c C-x C-v`
   - See org-download: https://emacs-china.org/t/org-download/1672/9
-  - `M-x org-download-clipboard` to download from clipboard
+  - `SPC m a p` or `M-x org-download-clipboard` to download from clipboard
   - `pngpaste` is a dependency
   - need to toggle the inline image again to resize
-  
+
 #+ATTR_ORG: :width 400
 [[file:website.jpg]]
 
