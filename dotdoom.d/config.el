@@ -49,6 +49,7 @@
 (with-eval-after-load 'org
 (setq org-todo-keywords
       '((sequence "TODO" "DOING" "BLOCKED" "REVIEW" "|" "DONE" "ARCHIVED"))))
+(setq org-log-done 'time)
 
 (after! org
   (setq org-tags-column -80)

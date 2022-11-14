@@ -176,6 +176,7 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 
 * misc
 ** `M-x cd`: change directory
+** `C-c C-e`: export file
 
 * Image: toggle with `C-c C-x C-v`
   - See org-download: https://emacs-china.org/t/org-download/1672/9

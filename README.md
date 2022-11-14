@@ -150,6 +150,12 @@ Mainly to use it for the purpose to use Org Mode
 
 ### Customizaton
 
+- automatic closed timestamp when item done
+
+```
+(setq org-log-done 'time)
+```
+
 - customise tags column alignment
 
 ```
@@ -173,6 +179,20 @@ Mainly to use it for the purpose to use Org Mode
 )
 ```
 
+- enable dragndrop
+
+```
+(org +dragndrop)
+```
+
+### Useful packages
+
+- `org-journal`
+- `org-capture`
+- `org-babel`
+- `org-cv`
+- `chinese`: https://develop.spacemacs.org/layers/+intl/chinese/README.html#description
+
 ### References
 
 - Org-mode tutorial:
@@ -189,6 +209,8 @@ Mainly to use it for the purpose to use Org Mode
   - https://terrymunro.keybase.pub/
 - [Org as a spreadsheet system: a short introduction](https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html)
 - [The Spreadsheet](https://orgmode.org/manual/The-Spreadsheet.html)
+- [](https://zzamboni.org/post/my-doom-emacs-configuration-with-commentary/)
+- [Sample doomemacs config](https://github.com/tefkah/doom-emacs-config)
 
 ### Tips
 
@@ -241,13 +263,6 @@ When using org-mode, can borrow the templates or structure from how others organ
   (spacemacs/declare-prefix "o" "own-menu")
   (spacemacs/set-leader-keys "oi" 'toggle-input-method)
   ```
-
-### Useful packages
-
-- `org-journal`
-- `org-capture`
-- `org-babel`
-- `chinese`: https://develop.spacemacs.org/layers/+intl/chinese/README.html#description
 
 ### References
 
