@@ -112,10 +112,10 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 ** open agenda: `SPC o A` (open Agenda) or `, a` (spacemacs)
 *** list of all todos: `t`, then `RET` to just to the item
 **** Use `{N} r` to search a particular type of todo items
-*** day/week or week view agenda: `, a a` and `d` or `w` to switch in between 
+*** day/week or week view agenda: `M-x org-agenda-weekly-view`
 **** You can use `, d d` or `, d s` to reschedule
 *** move between views
-**** `M-jkhl`
+**** `]/[` or `g d`
 ** Clock mode:
 *** `SPC m c`
 *** `, C i` clock in
