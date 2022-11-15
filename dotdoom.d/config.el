@@ -50,8 +50,6 @@
 (setq org-todo-keywords
       '((sequence "TODO" "DOING" "BLOCKED" "REVIEW" "|" "DONE" "ARCHIVED"))))
 (setq org-log-done 'time)
-(setq org-clock-in-switch-to-state "DOING")
-(setq org-clock-out-when-done t)
 
 (after! org
   (setq org-tags-column -80)
@@ -65,7 +63,9 @@
       "%?" :target
       (file+head "pages/${slug}.org" "#+title: ${title}\n")
       :unnarrowed t)))
-   ;; ... other org configuration here
+  (setq org-clock-in-switch-to-state "DOING")
+  (setq org-clock-out-when-done t)
+  ;; ... other org configuration here
 )
 
 
