@@ -164,6 +164,10 @@ Mainly to use it for the purpose to use Org Mode
 
 ```
 (setq org-log-done 'time)
+;; set to doing when clock-in
+(setq org-clock-in-switch-to-state "DOING") 
+;; clock out when done
+(setq org-clock-out-when-done t)
 ```
 
 - customise tags column alignment
