@@ -145,13 +145,14 @@ Mainly to use it for the purpose to use Org Mode
 
 ### Other userful shortcuts
 
-| Shortcut        | Description              |
-| --------------- | ------------------------ |
-| S'              | Qutote in visual mode    |
-| M-x eval-tutor  | Start evil mode tutorial |
-| M-x doom/reload | Doom Emacs reload        |
-| SPC h r r       | Doom Emacs reload        |
-| C-x d           | Dired                    |
+| Shortcut        | Description                 |
+|-----------------|-----------------------------|
+| S'              | Qutote in visual mode       |
+| M-x eval-tutor  | Start evil mode tutorial    |
+| M-x doom/reload | Doom Emacs reload           |
+| SPC h r r       | Doom Emacs reload           |
+| C-x d           | Dired                       |
+| C-c C-x C-i     | Clock in an TODO in logbook |
 
 ### Caveats
 
