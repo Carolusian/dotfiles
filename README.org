@@ -36,7 +36,11 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 *** toggle heading: `C-c *`: `org-toggle-heading`
 *** move subtree / list items: `M-j/k`
 *** move list item up, but not sub-items: `M-S-j/k`
-*** narrow(focus) / widen / center: `SPC n f` / `SPC n w` / `SPC w c C`
+*** narrow(focus) / widen / center:
+**** doomemacs: need to enable :ui zen in init.el
+- narrow: `SPC m s n` / `SPC m s N`
+- `M-x +zen/toggle`
+**** spacemacs: `SPC n f` / `SPC n w` / `SPC w c C`
 * Advanced editing in evil mode
 ** select an element: vae
 ** delete an element: dae

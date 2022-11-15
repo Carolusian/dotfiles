@@ -146,7 +146,7 @@ Mainly to use it for the purpose to use Org Mode
 ### Other userful shortcuts
 
 | Shortcut        | Description                 |
-|-----------------|-----------------------------|
+| --------------- | --------------------------- |
 | S'              | Qutote in visual mode       |
 | M-x eval-tutor  | Start evil mode tutorial    |
 | M-x doom/reload | Doom Emacs reload           |
@@ -165,7 +165,7 @@ Mainly to use it for the purpose to use Org Mode
 ```
 (setq org-log-done 'time)
 ;; set to doing when clock-in
-(setq org-clock-in-switch-to-state "DOING") 
+(setq org-clock-in-switch-to-state "DOING")
 ;; clock out when done
 (setq org-clock-out-when-done t)
 ```
@@ -217,6 +217,7 @@ Mainly to use it for the purpose to use Org Mode
 
 ### References
 
+- [Learn Elisp in Y minutes](https://learnxinyminutes.com/docs/elisp/)
 - Org-mode tutorial:
   - https://www.youtube.com/watch?v=PVsSOmUB7ic
   - Org Mode Basics in Doom Emacs: https://www.youtube.com/watch?v=34zODp_lhqg
@@ -238,6 +239,9 @@ Mainly to use it for the purpose to use Org Mode
 - [https://www.orgroam.com/manual.html](https://www.orgroam.com/manual.html)
 - [Configuring org-roam](https://coredumped.dev/2021/05/26/taking-org-roam-everywhere-with-logseq/)
 - [How to rename a note with everything updated at the same time?](https://org-roam.discourse.group/t/how-to-rename-a-note-with-everything-updated-at-the-same-time/300)
+- Writing:
+  - [Emacs for Distraction-Free Writing](https://lucidmanager.org/productivity/emacs-for-distraction-free-writing/)
+  - [How to blog with Emacs Org mode](https://opensource.com/article/20/3/blog-emacs)
 
 ### Tips
 
