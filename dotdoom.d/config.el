@@ -47,14 +47,15 @@
     )
 
 (with-eval-after-load 'org
-(setq org-todo-keywords
-      '((sequence "TODO" "DOING" "BLOCKED" "REVIEW" "|" "DONE" "ARCHIVED"))))
-(setq org-log-done 'time)
+  (setq org-todo-keywords
+        '((sequence "TODO" "DOING" "BLOCKED" "REVIEW" "|" "DONE" "ARCHIVED")))
+)
 
 (after! org
+  (setq org-log-done 'time)
   (setq org-tags-column -80)
   (setq org-roam-directory "~/Dropbox/secondbrain/org")
-  (setq org-roam-index-file "~/Dropbox/secondbrain/index.org")
+  ;; (setq org-roam-index-file "~/Dropbox/secondbrain/index.org")
   ;; For Logseq journals
   (setq org-roam-dailies-directory "journals/")
   ;; use Logseq journals filename convention
