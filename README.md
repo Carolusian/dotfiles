@@ -199,12 +199,21 @@ Mainly to use it for the purpose to use Org Mode
 (org +dragndrop)
 ```
 
-- Set org-roam directory
+- Set org-roam directory and org-roam-dailies
 
 ```
 (after! org
-        (setq org-roam-directory "~/secondbrain/org/")
-        (setq org-roam-index-file "~/secondbrain/org/index.org"))
+  (setq org-roam-directory "~/secondbrain/org/")
+  (setq org-roam-index-file "~/secondbrain/org/index.org")
+  ;; For Logseq journals
+  (setq org-roam-dailies-directory "journals/")
+  ;; use Logseq journals filename convention
+  (setq org-roam-dailies-capture-templates
+      '(("d" "default" entry
+         "* %?"
+         :target (file+head "%<%Y_%m_%d>.org"
+                            "#+title: %<%Y-%m-%d>\n"))))
+)
 ```
 
 ### Useful packages
@@ -229,8 +238,7 @@ Mainly to use it for the purpose to use Org Mode
 - Spacemacs cheatsheet: https://devhints.io/spacemacs
 - Pasting images in Org Mode: http://www.enist.org/blog/post/pasting-images-into-org-mode-on-mac/
 - Teaches Emacs configuration:
-  - https://tecosaur.github.io/emacs-config/config.html
-  - https://terrymunro.keybase.pub/
+  - https://tecosaur.github.io/emacs-config/config.html https://terrymunro.keybase.pub/
 - [Org as a spreadsheet system: a short introduction](https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html)
 - [The Spreadsheet](https://orgmode.org/manual/The-Spreadsheet.html)
 - [My Doom Emacs configuration, with commentary](https://zzamboni.org/post/my-doom-emacs-configuration-with-commentary/)
@@ -242,6 +250,8 @@ Mainly to use it for the purpose to use Org Mode
 - Writing:
   - [Emacs for Distraction-Free Writing](https://lucidmanager.org/productivity/emacs-for-distraction-free-writing/)
   - [How to blog with Emacs Org mode](https://opensource.com/article/20/3/blog-emacs)
+- Anki:
+  - [Power up Anki with Emacs, Org mode, anki-editor and more](https://yiufung.net/post/anki-org/)
 
 ### Tips
 

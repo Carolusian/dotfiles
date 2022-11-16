@@ -57,6 +57,12 @@
   (setq org-roam-index-file "~/Dropbox/secondbrain/index.org")
   ;; For Logseq journals
   (setq org-roam-dailies-directory "journals/")
+  ;; use Logseq journals filename convention
+  (setq org-roam-dailies-capture-templates
+      '(("d" "default" entry
+         "* %?"
+         :target (file+head "%<%Y_%m_%d>.org"
+                            "#+title: %<%Y-%m-%d>\n"))))
   ;; For Logseq pages
   (setq org-roam-capture-templates
    '(("d" "default" plain
