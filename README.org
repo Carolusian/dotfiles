@@ -103,6 +103,14 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
    DEADLINE: <2021-01-15 Fri 20:00>
 ** update existing: `S-UP/DOWN` and `S-LEFT/RIGHT` to change dates
 ** [#A] priority: `S-UP/DOWN`
+* TODO recurring tasks
+SCHEDULED: <2022-12-05 Mon +3d>
+:PROPERTIES:
+:LAST_REPEAT: [2022-11-17 Thu 17:25]
+:END:
+- State "DONE"       from "REVIEW"     [2022-11-17 Thu 17:25]
+- State "DONE"       from "REVIEW"     [2022-11-17 Thu 17:24]
+recurring every 3 days
 * Tags
 ** `C-c C-c`: insert tags
 ** `SPC u C-c C-c`: align the tags
@@ -124,6 +132,9 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 *** `SPC m c`
 *** `, C i` clock in
 *** `, C o` clock out
+** Search in agenda view
+*** `s`: trigger filter
+*** `S`: remove all filters
 * Tables
   See: https://orgmode.org/worg/org-tutorials/tables.html
 ** Creating a table

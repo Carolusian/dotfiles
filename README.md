@@ -125,6 +125,7 @@ Mainly to use it for the purpose to use Org Mode
 | SPC w    | Window      |
 | SPC b    | Buffer      |
 | SPC h    | Help        |
+| SPC w    | Window      |
 | SPC m    | Mode        |
 | SPC X    | Capture     |
 | g        | Evil mode   |
@@ -219,6 +220,7 @@ Mainly to use it for the purpose to use Org Mode
 ### Useful packages
 
 - `org-journal`
+- `org-roam`
 - `org-capture`
 - `org-babel`
 - `org-cv`
@@ -247,6 +249,7 @@ Mainly to use it for the purpose to use Org Mode
 - [https://www.orgroam.com/manual.html](https://www.orgroam.com/manual.html)
 - [Configuring org-roam](https://coredumped.dev/2021/05/26/taking-org-roam-everywhere-with-logseq/)
 - [How to rename a note with everything updated at the same time?](https://org-roam.discourse.group/t/how-to-rename-a-note-with-everything-updated-at-the-same-time/300)
+- [Adding recurring tasks in Org mode](https://medium.com/@A5anka/adding-recurring-tasks-in-org-mode-c38dfb6374e6)
 - Writing:
   - [Emacs for Distraction-Free Writing](https://lucidmanager.org/productivity/emacs-for-distraction-free-writing/)
   - [How to blog with Emacs Org mode](https://opensource.com/article/20/3/blog-emacs)
