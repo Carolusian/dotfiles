@@ -27,7 +27,17 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 * Motion
 ** next/prev heading: `gj/gk`
 ** move parent/child element: `gh/gl`
-** easymotion: `g s f {chr}`: `g` for evil mode commands 
+** easymotion: `g s f {chr}`: `g` for evil mode commands
+* Buffer
+** `SPC b [`: goto previous buffer
+* Dired: navigation and edit file names
+** Dired: `C-x d` > Search file > double `Enter`
+** Dired: `C-x d` > Enter > `M-x dired-do-rename` (org-roam id shall be remapped as well)
+* Window
+** `SPC w v`: vertical split the current buffer
+** `SPC w s`: horizontal split
+** `SPC w V ENTER`: vertical split and follow the link
+** `SPC w S ENTER`: horizontal split and follow the link
 * Structure editing: `, s` (, only applies to spacemacs)
 ** insert sibling: `C-RET`
 ** insert subheading: `, i s`
