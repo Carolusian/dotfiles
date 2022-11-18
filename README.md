@@ -119,7 +119,7 @@ Mainly to use it for the purpose to use Org Mode
 ### Layers
 
 | Shortcut | Description |
-| -------- | ----------- |
+|----------|-------------|
 | SPC f    | File        |
 | SPC t    | Toggle      |
 | SPC h    | Help        |
@@ -138,23 +138,32 @@ Mainly to use it for the purpose to use Org Mode
 
 ### Org roam
 
-| Shortcut              | Description                    |
-|-----------------------|--------------------------------|
-| M-x org-id-get-create | Insert orgid properties        |
-| M-x org-roam-db-sync  | Sync org-roam if file renamed  |
-| SPC w V ENTER         | Follow link in separate window |
+| Shortcut                  | Description                    |
+|---------------------------|--------------------------------|
+| SPC n r                   | org-roam                       |
+| M-x org-id-get-create     | insert orgid properties        |
+| M-x org-roam-db-sync      | sync org-roam if file renamed  |
+| M-x org-roam-db-clear-all | remove all roam cache entries  |
+| SPC w V ENTER             | follow link in separate window |
+
+> Tips: 
+> - org-roam.db is just a cache file located at `~/.emacs.d/.local/cache`, and can be rebuilt when necessary
+> - It is not recommended to sync the org-roam.db as absolute paths are used in the db
 
 ### Other userful shortcuts
 
-| Shortcut            | Description                     |
-| ------------------- | ------------------------------- |
-| S'                  | Qutote in visual mode           |
-| M-x eval-tutor      | Start evil mode tutorial        |
-| M-x doom/reload     | Doom Emacs reload               |
-| SPC h r r           | Doom Emacs reload               |
-| C-x d               | Dired                           |
-| C-c C-x C-i         | Clock in an TODO in logbook     |
-| C-0 M-x org-capture | org-capture at current location |
+| Shortcut            | Description                              |
+|---------------------|------------------------------------------|
+| S'                  | Qutote in visual mode                    |
+| C-h v               | Help > describe variable                 |
+| SPC x               | Popup scratch buffer for lisp evaluation |
+| M-x eval-tutor      | Start evil mode tutorial                 |
+| M-x doom/reload     | Doom Emacs reload                        |
+| SPC h r r           | Doom Emacs reload                        |
+| C-x d               | Dired                                    |
+| C-c C-x C-i         | Clock in an TODO in logbook              |
+| C-0 M-x org-capture | org-capture at current location          |
+| M-x customize       | Easy customization                       |
 
 ### Caveats
 
@@ -168,7 +177,7 @@ Mainly to use it for the purpose to use Org Mode
 (setq org-log-done 'time)
 ;; set to doing when clock-in
 (setq org-clock-in-switch-to-state "DOING")
-;; clock out when done
+;; Clock Out when done
 (setq org-clock-out-when-done t)
 ```
 
@@ -234,7 +243,9 @@ Mainly to use it for the purpose to use Org Mode
   - https://www.youtube.com/watch?v=PVsSOmUB7ic
   - Org Mode Basics in Doom Emacs: https://www.youtube.com/watch?v=34zODp_lhqg
   - Boost Productivity With Emacs, Org Mode and Org Agenda: https://www.youtube.com/watch?v=Ea_-TaEGa7Y
-- [Good][the ultimate doom emacs cheatsheet](https://naghdbishi.ir/Doom-Emacs-Cheat-Sheet/README.html)
+- Cheatsheets
+  - [Good][the ultimate doom emacs cheatsheet](https://naghdbishi.ir/Doom-Emacs-Cheat-Sheet/README.html)
+  - [Doom Emacs Cheatsheet](https://gist.github.com/hjertnes/9e14416e8962ff5f03c6b9871945b165)
 - [Emacs for writing prose](https://discourse.doomemacs.org/t/emacs-for-writing-prose/515)
 - Doom Emacs for Noobs: https://www.youtube.com/watch?v=iab2z21cRqA&t=820s
 - Why Emacs uses Meta key: https://catonmat.net/why-emacs-uses-meta-key

@@ -209,9 +209,20 @@ recurring every 3 days
 - setup `org-roam-dailies-directory` to `journels` as of loqseq
 - `M-x org-roam-dailies-goto-today` to create an journel entry in `journels` folder
 
+* org-roam
+- default db location is `~/.emacs.d/.local/cache/org-roam.dB`
+
+* org-capture
+
+* Elisp
+- `C-x C-e`: evaluate the visual selected code (works also in scratch)
+
 * misc
+** `M-x customize`: easy customization
 ** `M-x cd`: change directory
 ** `C-c C-e`: export file
+** `C-h v`: help > describe variable or easy customization, e.g. `org-roam-db-location`
+** `b scratch`: edit in scratch buffer for lisp interactiion
 
 * Image: toggle with `C-c C-x C-v`
   - See org-download: https://emacs-china.org/t/org-download/1672/9
