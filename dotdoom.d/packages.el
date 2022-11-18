@@ -55,3 +55,7 @@
 ;; 
 ;; ;; better cursor support for evil-mode
 ;; (package! evil-terminal-cursor-changer)
+
+;; add org-roam-ui
+(unpin! org-roam)
+(package! org-roam-ui)

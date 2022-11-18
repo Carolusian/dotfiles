@@ -122,10 +122,9 @@ Mainly to use it for the purpose to use Org Mode
 | -------- | ----------- |
 | SPC f    | File        |
 | SPC t    | Toggle      |
-| SPC w    | Window      |
-| SPC b    | Buffer      |
 | SPC h    | Help        |
 | SPC w    | Window      |
+| SPC b    | Buffer      |
 | SPC m    | Mode        |
 | SPC X    | Capture     |
 | g        | Evil mode   |
@@ -221,7 +220,7 @@ Mainly to use it for the purpose to use Org Mode
 ### Useful packages
 
 - `org-journal`
-- `org-roam`
+- `org-roam`/ org-roam-ui
 - `org-capture`
 - `org-babel`
 - `org-cv`
@@ -234,7 +233,7 @@ Mainly to use it for the purpose to use Org Mode
   - https://www.youtube.com/watch?v=PVsSOmUB7ic
   - Org Mode Basics in Doom Emacs: https://www.youtube.com/watch?v=34zODp_lhqg
   - Boost Productivity With Emacs, Org Mode and Org Agenda: https://www.youtube.com/watch?v=Ea_-TaEGa7Y
-- [The Ultimate Doom Emacs Cheatsheet](https://naghdbishi.ir/Doom-Emacs-Cheat-Sheet/README.html)
+- [Good][The Ultimate Doom Emacs Cheatsheet](https://naghdbishi.ir/Doom-Emacs-Cheat-Sheet/README.html)
 - [Emacs for writing prose](https://discourse.doomemacs.org/t/emacs-for-writing-prose/515)
 - Doom Emacs for Noobs: https://www.youtube.com/watch?v=iab2z21cRqA&t=820s
 - Why Emacs uses Meta key: https://catonmat.net/why-emacs-uses-meta-key
