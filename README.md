@@ -271,7 +271,7 @@ Mainly to use it for the purpose to use Org Mode
 - Anki:
   - [Power up Anki with Emacs, Org mode, anki-editor and more](https://yiufung.net/post/anki-org/)
 - Font:
-  - [emacs使用笔记](https://hsingko.github.io/post/emacs/)
+  - [emacs使用笔记](https://hsingko.github.io/post/emacs/): (cnfonts + `cnfonts-edit-profile`)
   - [Org-Mode 表格对齐设置](https://manateelazycat.github.io/emacs/2020/04/02/org-font.html)
   - [https://www.skfwe.cn/p/org-mode-basic-in-doom-emacs/]
   - can use homebrew to install required fonts
