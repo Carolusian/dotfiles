@@ -70,8 +70,12 @@
       "%?" :target
       (file+head "pages/${slug}.org" "#+title: ${title}\n")
       :unnarrowed t)))
+
+  ;; clock-in/ clock-out
   (setq org-clock-in-switch-to-state "DOING")
   (setq org-clock-out-when-done t)
+
+  (setq +zen-text-scale 0)
   ;; ... other org configuration here
 )
 
