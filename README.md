@@ -275,6 +275,7 @@ Mainly to use it for the purpose to use Org Mode
   - [Org-Mode 表格对齐设置](https://manateelazycat.github.io/emacs/2020/04/02/org-font.html)
   - [https://www.skfwe.cn/p/org-mode-basic-in-doom-emacs/]
   - can use homebrew to install required fonts
+  - Fira Code + Hiragino Sans GB
 
 ### Tips
 
