@@ -234,6 +234,7 @@ Mainly to use it for the purpose to use Org Mode
 - `org-capture`
 - `org-babel`
 - `org-cv`
+- `cnfonts`: resolve the width issues of Chinese characters
 - `chinese`: https://develop.spacemacs.org/layers/+intl/chinese/README.html#description
 
 ### References
@@ -269,6 +270,11 @@ Mainly to use it for the purpose to use Org Mode
   - [How to blog with Emacs Org mode](https://opensource.com/article/20/3/blog-emacs)
 - Anki:
   - [Power up Anki with Emacs, Org mode, anki-editor and more](https://yiufung.net/post/anki-org/)
+- Font:
+  - [emacs使用笔记](https://hsingko.github.io/post/emacs/)
+  - [Org-Mode 表格对齐设置](https://manateelazycat.github.io/emacs/2020/04/02/org-font.html)
+  - [https://www.skfwe.cn/p/org-mode-basic-in-doom-emacs/]
+  - can use homebrew to install required fonts
 
 ### Tips
 

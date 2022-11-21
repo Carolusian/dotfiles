@@ -86,6 +86,8 @@
         org-roam-ui-update-on-save t
         org-roam-ui-open-on-start t))
 
+;;(setq doom-font (font-spec :family "Source Code Pro" :size 15))
+(cnfonts-enable)
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
