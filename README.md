@@ -276,6 +276,8 @@ Mainly to use it for the purpose to use Org Mode
   - [https://www.skfwe.cn/p/org-mode-basic-in-doom-emacs/]
   - can use homebrew to install required fonts
   - Fira Code + Hiragino Sans GB
+- Clock:
+  - [The clock table](https://orgmode.org/manual/The-clock-table.html)
 
 ### Tips
 

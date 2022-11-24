@@ -58,7 +58,8 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 ** delete an element: daR
 ** indent a subtree: `=aR`
 ** yank subtree: yiR
-** Format: `, x`
+** Format: `, x` (spacemacs)
+- `M-x org-emphasize` or `C-c C-x C-f`
 ** evil mode formating:
    `v i` for evil mode inner selection mode, most common is `v i w`
    `y s` yank surround, `i w` inner word, `~` to format code
@@ -68,15 +69,21 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
 ** visual-line-mode: `M-x visual-line-mode`
 * Insert snippets
 ** `SPC i s` or `M-m-i-s`
+** `C-c '`: org-edit-special to edit code in separate window
+** `C-c C-c` or `C-c C-o`: execute the code
+** `C-c C-e`: export HTML
 ** bang: #!/usr/bin/env bash
 ** license: `SPC-i-s license`
 ** time: Wed Jan 13 23:49:36 2021
 
   #+BEGIN_SRC python 
-  import py
-  print "Hello World"
+  import os
+  return("Hello World")
   #+END_SRC
-   
+
+  #+RESULTS:
+  : Hello World
+
 * TODO items
 ** DONE example one
    CLOSED: [2021-01-14 Thu 20:24]
@@ -142,6 +149,11 @@ recurring every 3 days
 *** `SPC m c`
 *** `, C i` clock in
 *** `, C o` clock out
+*** `M-x org-clock-display`
+*** `M-x org-clock-report`
+*** `M-x org-dblock-update`
+#+BEGIN: clocktable :scope agenda :block lastweek :compact t
+#+END: clocktable
 ** Search in agenda view
 *** `s`: trigger filter
 *** `S`: remove all filters
