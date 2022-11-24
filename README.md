@@ -233,6 +233,7 @@ Mainly to use it for the purpose to use Org Mode
 - `org-roam`/ org-roam-ui
 - `org-capture`
 - `org-babel`
+- `org-clock-csv`: `M-x org-clock-csv-to-file`
 - `org-cv`
 - `cnfonts`: resolve the width issues of Chinese characters
 - `chinese`: https://develop.spacemacs.org/layers/+intl/chinese/README.html#description

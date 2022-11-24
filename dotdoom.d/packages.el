@@ -60,3 +60,4 @@
 (unpin! org-roam)
 (package! org-roam-ui)
 (package! cnfonts)
+(package! org-clock-csv)
