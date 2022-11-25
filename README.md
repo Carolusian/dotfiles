@@ -119,7 +119,7 @@ Mainly to use it for the purpose to use Org Mode
 ### Layers
 
 | Shortcut | Description |
-|----------|-------------|
+| -------- | ----------- |
 | SPC f    | File        |
 | SPC t    | Toggle      |
 | SPC h    | Help        |
@@ -139,21 +139,22 @@ Mainly to use it for the purpose to use Org Mode
 ### Org roam
 
 | Shortcut                  | Description                    |
-|---------------------------|--------------------------------|
+| ------------------------- | ------------------------------ |
 | SPC n r                   | org-roam                       |
 | M-x org-id-get-create     | insert orgid properties        |
 | M-x org-roam-db-sync      | sync org-roam if file renamed  |
 | M-x org-roam-db-clear-all | remove all roam cache entries  |
 | SPC w V ENTER             | follow link in separate window |
 
-> Tips: 
+> Tips:
+>
 > - org-roam.db is just a cache file located at `~/.emacs.d/.local/cache`, and can be rebuilt when necessary
 > - It is not recommended to sync the org-roam.db as absolute paths are used in the db
 
 ### Other userful shortcuts
 
 | Shortcut            | Description                              |
-|---------------------|------------------------------------------|
+| ------------------- | ---------------------------------------- |
 | S'                  | Qutote in visual mode                    |
 | C-h v               | Help > describe variable                 |
 | SPC x               | Popup scratch buffer for lisp evaluation |
@@ -272,17 +273,22 @@ Mainly to use it for the purpose to use Org Mode
 - Anki:
   - [Power up Anki with Emacs, Org mode, anki-editor and more](https://yiufung.net/post/anki-org/)
 - Font:
-  - [emacs使用笔记](https://hsingko.github.io/post/emacs/): (cnfonts + `cnfonts-edit-profile`)
+  - [emacs 使用笔记](https://hsingko.github.io/post/emacs/): (cnfonts + `cnfonts-edit-profile`)
   - [Org-Mode 表格对齐设置](https://manateelazycat.github.io/emacs/2020/04/02/org-font.html)
   - [https://www.skfwe.cn/p/org-mode-basic-in-doom-emacs/]
   - can use homebrew to install required fonts
   - Fira Code + Hiragino Sans GB
 - Clock:
   - [The clock table](https://orgmode.org/manual/The-clock-table.html)
+- afternoon-theme issue:
+  - [Unexpected runtime error running doom cli #6960](https://github.com/doomemacs/doomemacs/issues/6960#issuecomment-1327122489)
+  - [(wrong-type-argument stringp nil) error when cloning a package during doom {install,upgrade}](https://github.com/doomemacs/doomemacs/issues/5918)
 
 ### Tips
 
 When using org-mode, can borrow the templates or structure from how others organization there Notion.so workspace
+
+Fix afternoon-theme issue: `cd ~/.emacs.d/.local/straight/repos/straight.el && git pull origin develop`
 
 ## spacemacs
 

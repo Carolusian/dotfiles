@@ -60,4 +60,6 @@
 (unpin! org-roam)
 (package! org-roam-ui)
 (package! cnfonts)
-(package! org-clock-csv)
+(package! org-ml)
+(package! org-clock-csv
+  :recipe (:local-repo "org-clock-csv"))
