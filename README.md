@@ -259,8 +259,8 @@ Mainly to use it for the purpose to use Org Mode
 - [Org as a spreadsheet system: a short introduction](https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html)
 - [The Spreadsheet](https://orgmode.org/manual/The-Spreadsheet.html)
 - Sample configurations:
+  - [Good][My Doom Emacs configuration, with commentary](https://zzamboni.org/post/my-doom-emacs-configuration-with-commentary/)
   - [My Doom Emacs configurations](https://hieuphay.com/doom-emacs-config/)
-  - [My Doom Emacs configuration, with commentary](https://zzamboni.org/post/my-doom-emacs-configuration-with-commentary/)
   - [Sample doomemacs config](https://github.com/tefkah/doom-emacs-config)
 - [DoomEmacs Installing Org-Roam](https://www.reddit.com/r/DoomEmacs/comments/sh7m64/installing_orgroam/)
 - [https://www.orgroam.com/manual.html](https://www.orgroam.com/manual.html)

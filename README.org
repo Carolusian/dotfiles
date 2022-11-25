@@ -67,7 +67,7 @@ Use `TAB` to fold a single headline, or `zc` and `zo`
    use dot to repeat the ~command~ to another code
 ** fill-paragraph: `M-q`
 ** visual-line-mode: `M-x visual-line-mode`
-* Insert snippets
+* Insert snippets: org-babel
 ** `SPC i s` or `M-m-i-s`
 ** `C-c '`: org-edit-special to edit code in separate window
 ** `C-c C-c` or `C-c C-o`: execute the code
