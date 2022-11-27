@@ -55,6 +55,8 @@
 (after! org
   (setq org-log-done 'time)
   (setq org-tags-column -80)
+  ;; For reading elisp code
+  (setq show-smartparens-mode t)
   (setq org-roam-directory "~/Dropbox/secondbrain/org")
   ;; (setq org-roam-index-file "~/Dropbox/secondbrain/index.org")
   ;; For Logseq journals
