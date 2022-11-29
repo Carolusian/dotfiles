@@ -63,3 +63,7 @@
 (package! org-ml)
 (package! org-clock-csv
   :recipe (:local-repo "org-clock-csv"))
+(package! org-tasks-csv
+  :recipe (:host github
+           :branch "main"
+           :repo "carolusian/org-tasks-csv"))

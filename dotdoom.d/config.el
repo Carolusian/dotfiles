@@ -93,6 +93,8 @@
         org-roam-ui-update-on-save t
         org-roam-ui-open-on-start t))
 
+(use-package! org-tasks-csv
+   :after org)
 ;;(setq doom-font (font-spec :family "Source Code Pro" :size 15))
 (cnfonts-enable)
 
