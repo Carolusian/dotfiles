@@ -235,6 +235,10 @@ Mainly to use it for the purpose to use Org Mode
 - `org-capture`
 - `org-babel`
 - `org-clock-csv`: `M-x org-clock-csv-to-file`
+- `org-tasks-csv`: created by myself
+- `ox-freemind`: builtin with doomemacs
+  - can use together with freeplane (forked from freemind)
+  - https://www.zmonster.me/2014/01/06/freemind-with-org-mode.html
 - `org-cv`
 - `cnfonts`: resolve the width issues of Chinese characters
 - `chinese`: https://develop.spacemacs.org/layers/+intl/chinese/README.html#description
@@ -259,7 +263,7 @@ Mainly to use it for the purpose to use Org Mode
 - [Org as a spreadsheet system: a short introduction](https://orgmode.org/worg/org-tutorials/org-spreadsheet-intro.html)
 - [The Spreadsheet](https://orgmode.org/manual/The-Spreadsheet.html)
 - Sample configurations:
-  - [Good][My Doom Emacs configuration, with commentary](https://zzamboni.org/post/my-doom-emacs-configuration-with-commentary/)
+  - [Good][my doom emacs configuration, with commentary](https://zzamboni.org/post/my-doom-emacs-configuration-with-commentary/)
   - [My Doom Emacs configurations](https://hieuphay.com/doom-emacs-config/)
   - [Sample doomemacs config](https://github.com/tefkah/doom-emacs-config)
 - [DoomEmacs Installing Org-Roam](https://www.reddit.com/r/DoomEmacs/comments/sh7m64/installing_orgroam/)
