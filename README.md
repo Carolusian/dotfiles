@@ -357,6 +357,7 @@ Fix afternoon-theme issue: `cd ~/.emacs.d/.local/straight/repos/straight.el && g
 - Implementing A Second Brain in Emacs and Org-Mode: https://tasshin.com/blog/implementing-a-second-brain-in-emacs-and-org-mode/
 - How to config spacemacs: https://www.youtube.com/watch?v=2P-hEtTlJIA&amp%3Bfeature=share
 - A practical guide to spacemacs: https://practicalli.github.io/spacemacs/org-mode/todo-states.html
+- Cloudmacs: Emacs in your web browser: https://beepb00p.xyz/cloudmacs.html
 
 ## vscode
 

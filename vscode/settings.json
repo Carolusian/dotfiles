@@ -31,9 +31,10 @@
   "workbench.tree.indent": 4,
   "files.exclude": {
     "**/.classpath": true,
+    "**/.factorypath": true,
     "**/.project": true,
     "**/.settings": true,
-    "**/.factorypath": true
+    "**/*.ts.meta": true
   },
   "files.eol": "\n",
   "tailwindCSS.emmetCompletions": true,
@@ -55,5 +56,13 @@
   "[python]": {
     "editor.formatOnType": true
   },
-  "editor.formatOnSave": true
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
