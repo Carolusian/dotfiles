@@ -16,7 +16,7 @@ $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Pr
 ```
 
 ## Neovim
-
+- Link `init.vim` to `~/.config/nvim/init.vim`
 - See how to setup Python for Neovim: [https://github.com/deoplete-plugins/deoplete-jedi/wiki/Setting-up-Python-for-Neovim]
   - Make sure have `pynvim` and `jedi` installed
 - Use `:checkhealth` and `:UpdateRemotePlugins` to debug plugin installations
