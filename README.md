@@ -12,10 +12,11 @@ You need to clone it to C:\User\<Username>\dotfiles
 $ cd C:\User\<Username>\AppData\Roaming\Sublime Text 3\Packages\User
 $ mklink "Package Control.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Package Control.sublime-settings"
 $ mklink "Preferences.sublime-settings" "C:\User\<Username>\dotfiles\sublime3\Preferences.sublime-settings"
+
 ```
 
 ## Neovim
-
+- Link `init.vim` to `~/.config/nvim/init.vim`
 - See how to setup Python for Neovim: [https://github.com/deoplete-plugins/deoplete-jedi/wiki/Setting-up-Python-for-Neovim]
   - Make sure have `pynvim` and `jedi` installed
 - Use `:checkhealth` and `:UpdateRemotePlugins` to debug plugin installations
@@ -161,7 +162,7 @@ Mainly to use it for the purpose to use Org Mode
 | M-x eval-tutor      | Start evil mode tutorial                 |
 | M-x doom/reload     | Doom Emacs reload                        |
 | SPC h r r           | Doom Emacs reload                        |
-| C-x d               | Dired                                    |
+| C-x d               | Dired (can skim quickly with mouse click |
 | C-c C-x C-i         | Clock in an TODO in logbook              |
 | C-0 M-x org-capture | org-capture at current location          |
 | M-x customize       | Easy customization                       |
@@ -356,6 +357,7 @@ Fix afternoon-theme issue: `cd ~/.emacs.d/.local/straight/repos/straight.el && g
 - Implementing A Second Brain in Emacs and Org-Mode: https://tasshin.com/blog/implementing-a-second-brain-in-emacs-and-org-mode/
 - How to config spacemacs: https://www.youtube.com/watch?v=2P-hEtTlJIA&amp%3Bfeature=share
 - A practical guide to spacemacs: https://practicalli.github.io/spacemacs/org-mode/todo-states.html
+- Cloudmacs: Emacs in your web browser: https://beepb00p.xyz/cloudmacs.html
 
 ## vscode
 
