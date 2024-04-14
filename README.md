@@ -390,3 +390,10 @@ Fix afternoon-theme issue: `cd ~/.emacs.d/.local/straight/repos/straight.el && g
 - org-mode: can use `_` instead of `-` in filenames in emacs for consistent file naming
 - org-mode file links can be enabled
 - can select org as default file format
+
+## RIME
+
+- [Cantonese with Simplified Chinese Default](https://github.com/rime/rime-cantonese/issues/151)
+- [Reverse Lookup](https://github.com/rime/rime-cantonese/blob/main/jyut6ping3.schema.yaml#L178): use `\``
+- [Wubi86](https://github.com/KyleBing/rime-wubi86-jidian)
+- [All collections for Rime IME](https://github.com/LEOYoon-Tsaw/Rime_collections/tree/master)
