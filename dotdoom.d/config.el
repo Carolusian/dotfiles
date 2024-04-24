@@ -96,7 +96,7 @@
 (use-package! org-tasks-csv
    :after org)
 ;;(setq doom-font (font-spec :family "Source Code Pro" :size 15))
-(cnfonts-enable)
+(cnfonts-mode 1)
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
