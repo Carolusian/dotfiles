@@ -147,6 +147,13 @@ Mainly to use it for the purpose to use Org Mode
 | M-x org-roam-db-clear-all | remove all roam cache entries  |
 | SPC w V ENTER             | follow link in separate window |
 
+### Org links
+
+| Shortcut                  | Description                    |
+| ------------------------- | ------------------------------ |
+| SPC m l                   | +links	                     |
+| SPC m l t                 | toggle link display	     |
+
 > Tips:
 >
 > - org-roam.db is just a cache file located at `~/.emacs.d/.local/cache`, and can be rebuilt when necessary
