@@ -6,6 +6,7 @@
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets. It is optional.
+(setenv "LANG" "en_US.UTF-8")
 (setq user-full-name "Carolusian"
       user-mail-address "cc@bitdancy.com")
 
